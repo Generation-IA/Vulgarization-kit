@@ -1,9 +1,7 @@
 .main {
-    position: relative;
-    width: 649px;
-    height: 314px;
-    left: 396px;
-    top: 212px;
+    max-width: 100%;
+    height: auto;
+    width: auto; /* ie8 */
 }
 
 .topleft {

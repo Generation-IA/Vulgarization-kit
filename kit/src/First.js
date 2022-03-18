@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './img/image1.png';
-import alt from './img/image4.svg';
+import logo from './img/Logo_group.svg';
 import './css/First.css';
 
 class First extends React.Component {
@@ -12,8 +11,6 @@ class First extends React.Component {
         return (
             <div class="center">
                 <img class="main" src={logo} alt="logo"></img>
-                <img class="topleft" src={alt} alt="logo"></img>
-            
             </div>
         )
     }
