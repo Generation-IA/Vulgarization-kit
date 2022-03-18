@@ -4,6 +4,10 @@
     width: auto; /* ie8 */
 }
 
+.hero {
+    margin-bottom: 5rem;
+}
+
 .topleft {
     position: absolute;
 width: 69px;
