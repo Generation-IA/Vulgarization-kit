@@ -53,10 +53,10 @@ code {
 }
 
 .rect1 {
-  position: absolute;
+
   width: 1440px;
   height: 839px;
-  left: 25px;
+
   /*top: 3889px;*/
 
   background: conic-gradient(from 180deg at 50% 50%, #AB3681 0deg, #F6CB68 360deg);

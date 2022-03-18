@@ -56,7 +56,7 @@ class App extends React.Component {
       <div class="center">
         <First></First>
         <div></div>
-        <h2 class="at1">Atelier n'2</h2>
+        <h2 class="at1">Atelier n'1</h2>
 
         {/* <Button variant="primary">ta mere la pute</Button> */}
 
