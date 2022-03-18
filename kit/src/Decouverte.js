@@ -1,4 +1,7 @@
 import React from 'react';
+import logo from './img/Rectangle 35.svg';
+import "bootstrap/dist/css/bootstrap.css";
+import { Container, Col, Row, Button} from "react-bootstrap";
 
 class Decouverte extends React.Component {
     constructor(props) {
@@ -7,10 +10,19 @@ class Decouverte extends React.Component {
 
     render() {
         return (
-            <div class="center">
-                <h2 class='title1'></h2>
-            </div>
+            <Container fluid>
+                <Row>
+                    <img src={logo}></img>
+                </Row>
+                
+                <Row>
+                    <Col>
+                    </Col>
+                </Row>
+                
+            </Container>
         )
+
     }
 }
 

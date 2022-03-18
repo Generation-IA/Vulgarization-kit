@@ -5,11 +5,12 @@ import SketchPose from "./cv/pose_detect.js";
 import SketchFace from "./cv/face_detect.js";
 import SketchHand from "./cv/hand_detect.js";
 import First from "./First.js";
+import Decouverte from "./Decouverte.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
 // import Container from 'react-bootstrap/Container';
-import { Container, Col, Row, Button} from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 
 class App extends React.Component {
   constructor(props) {
@@ -55,7 +56,6 @@ class App extends React.Component {
       <div class="center">
         <First></First>
         <div></div>
-        <h2 class="title1">Module découverte</h2>
         <h2 class="at1">Atelier n'2</h2>
 
         {/* <Button variant="primary">ta mere la pute</Button> */}
@@ -150,10 +150,14 @@ class App extends React.Component {
             </Col>
           </Row>
         </Container>
-
-        <div class="rect1">
-          <div ref={this.cvRef} class="rect2"></div>
-        </div>
+        <Container fluid>
+          <Row>
+            <div class="rect1">
+              <div ref={this.cvRef} class="rect2"></div>
+            </div>
+          </Row>
+        </Container>
+        <Decouverte></Decouverte>
       </div>
     );
   }
