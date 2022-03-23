@@ -45,6 +45,11 @@ class Decouverte extends React.Component {
                         <br></br>Atelier 4:<br></br> {this.text}
                 </p>
                 </Row>
+                {/* <Row>
+                    <Button variant="primary" onClick={this.start}>
+                        Commencer
+                    </Button>
+                </Row> */}
             </Container>
         )
 
