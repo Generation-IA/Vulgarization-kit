@@ -77,45 +77,6 @@ class App extends React.Component {
         <First></First>
         <div></div>
         <h2 class="at1">Atelier n'1</h2>
-
-        {/* <Button variant="primary">ta mere la pute</Button> */}
-
-        {/* <Container fluid>
-          <Row>
-            <Col>1 of 1</Col>
-          </Row>
-        </Container> */}
-
-        {/* <button class='button button1'
-          type="button"
-          onClick={this.start}
-        >Start</button>
-
-        <button class='button button0'
-          type="button"
-          onClick={this.objDetector}
-        >Object Detector</button>
-
-        <button class='button button0'
-          type="button"
-          onClick={this.PoseNet}
-        >PoseNet</button>
-
-        <button class='button button0'
-          type="button"
-          onClick={this.Facemesh}
-        >Facemesh</button>
-
-        <button class='button button0'
-          type="button"
-          onClick={this.HandPose}
-        >HandPose</button>
-
-        <button class='button button2'
-          type="button"
-          onClick={this.stopModel}
-        >Stop</button> */}
-
         <Container fluid>
           <Row>
             <Col>
