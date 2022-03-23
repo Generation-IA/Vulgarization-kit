@@ -12,11 +12,31 @@ import "bootstrap/dist/css/bootstrap.css";
 // import Container from 'react-bootstrap/Container';
 import { Container, Col, Row, Button } from "react-bootstrap";
 
+// function that returns window size
+function getWindowSize() {
+  return {
+    width: window.innerWidth || document.documentElement.clientWidth,
+    height: window.innerHeight || document.documentElement.clientHeight,
+  };
+}
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.cvRef = React.createRef();
   }
+
+  // Log the window size
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  // Log on the console the window size
+  updateWindowDimensions = () => {
+    const { width, height } = getWindowSize();
+    console.log(`Window size: ${width}x${height}`); // eslint-disable-line no-console
+  };
+
 
   SketchObj = SketchObj;
   SketchPose = SketchPose;
