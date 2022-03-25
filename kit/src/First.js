@@ -13,7 +13,7 @@ class First extends React.Component {
     return (
       <div class="hero text-center">
         <Container fluid id="hero text-center">
-          <img class="main" src={logo} alt="logo" width="72" height="57"></img>
+          <img class="main" src={logo} alt="logo" width="85" height="65"></img>
           {/* <h1 class="display-5 fw-bold">Génération IA</h1> */}
           <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">

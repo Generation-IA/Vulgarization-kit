@@ -53,7 +53,6 @@ class App extends React.Component {
     return (
       <div class="center">
         <First></First>
-
         <div></div>
         <h2 class="at1">Atelier n'2</h2>
         <Buttons></Buttons>
