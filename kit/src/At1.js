@@ -49,7 +49,7 @@ class At1 extends React.Component {
                     <ParallaxProvider>
                         <Parallax
                             className="custom-class"
-                            translateX={['100px', '-200px']}
+                            translateX={['80%', '-20%']}
                             tagOuter="figure"
                         >
                             <img class="side" src={side}></img>
