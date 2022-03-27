@@ -47,32 +47,10 @@ code {
 
 .center {
   margin: auto;
-  width: 80%;
   padding: 10px;
   margin: 20px;
 }
 
-.rect1 {
-
-  width: 1440px;
-  height: 839px;
-
-  /*top: 3889px;*/
-
-  background: conic-gradient(from 180deg at 50% 50%, #AB3681 0deg, #F6CB68 360deg);
-  border-radius: 110px;
-}
-
-.rect2 {
-  position: relative;
-  width: 1360px;
-  height: 759px;
-  left: 40px;
-  top: 40px;
-
-  background: #000000;
-  border-radius: 110px;
-}
 
 .at1 {
   position: relative;

@@ -6,6 +6,7 @@ import SketchFace from "./cv/face_detect.js";
 import SketchHand from "./cv/hand_detect.js";
 import First from "./First.js";
 import Decouverte from "./Decouverte.js";
+import At1 from "./At1.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
@@ -74,71 +75,10 @@ class App extends React.Component {
   render() {
     return (
       <div class="center">
-        <First></First>
-        <div></div>
-        <h2 class="at1">Atelier n'1</h2>
-        <Container fluid>
-          <Row>
-            <Col>
-              <button class="button button1" type="button" onClick={this.start}>
-                Start
-              </button>
-            </Col>
-            <Col>
-              <button
-                class="button button0"
-                type="button"
-                onClick={this.objDetector}
-              >
-                Object Detector
-              </button>
-            </Col>
-            <Col>
-              <button
-                class="button button0"
-                type="button"
-                onClick={this.PoseNet}
-              >
-                PoseNet
-              </button>
-            </Col>
-            <Col>
-              <button
-                class="button button0"
-                type="button"
-                onClick={this.Facemesh}
-              >
-                Facemesh
-              </button>
-            </Col>
-            <Col>
-              <button
-                class="button button0"
-                type="button"
-                onClick={this.HandPose}
-              >
-                HandPose
-              </button>
-            </Col>
-            <Col>
-              <button
-                class="button button2"
-                type="button"
-                onClick={this.stopModel}
-              >
-                Stop
-              </button>
-            </Col>
-          </Row>
-        </Container>
-        <Container fluid>
-          <Row>
-            <div class="rect1">
-              <div ref={this.cvRef} class="rect2"></div>
-            </div>
-          </Row>
-        </Container>
-        <Decouverte></Decouverte>
+        <First/>
+        <Decouverte/>
+        <At1/>
+
       </div>
     );
   }
