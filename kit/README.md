@@ -1,3 +1,12 @@
+
+# Contributing rules
+## Adding a new feature
+List of things you need to do when adding new feature:
+ - Create a branche named after your feature
+ - Make your changes acording to the documentation
+ - When finished make a pull request
+ - Then make the documentation for your new code 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
