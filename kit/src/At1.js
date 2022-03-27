@@ -35,26 +35,26 @@ class At1 extends React.Component {
                             <Col>
                                 <h2>Objectifs Pedagogiques</h2>
                             </Col>
-                            <Col>
+                            <Col sm={1}>
                                 {/* Button for text to speach */}
                             </Col>
                         </Row>
                         <Row>
-                            <p>{this.text}<br/><br/>
+                            <p class="bodytext">{this.text}<br/><br/>
                             Ut sem risus, ornare a scelerisque ut, ultrices id urna. Vivamus mollis faucibus ante, non cursus orci vestibulum non. Aliquam sed magna et odio pharetra laoreet non sit amet mauris. Curabitur malesuada vestibulum risus, sed accumsan lacus semper sit amet. Nullam hendrerit massa a ipsum feugiat, vitae rutrum urna pellentesque. In vitae posuere nibh
                             </p>
                         </Row>
                     </Col>
-                    <Col>
-                    <ParallaxProvider>
-                        <Parallax
-                            className="custom-class"
-                            translateX={['80%', '-20%']}
-                            tagOuter="figure"
-                        >
-                            <img class="side" src={side}></img>
-                        </Parallax>
-                    </ParallaxProvider>
+                    <Col sm={4}>
+                        <ParallaxProvider>
+                            <Parallax
+                                className="custom-class"
+                                translateX={['40%', '0%']}
+                                tagOuter="figure"
+                            >
+                                <img class="side" src={side}></img>
+                            </Parallax>
+                        </ParallaxProvider>
                     </Col>
                 </Row>
                 <Row>
