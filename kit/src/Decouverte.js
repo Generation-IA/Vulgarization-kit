@@ -3,7 +3,6 @@ import logo from './img/Rectangle 35.svg';
 import ia1 from './img/ia-1.svg';
 import ia2 from './img/ia-2.svg';
 import ia3 from './img/ia-3.svg';
-import ia4 from './img/ia-4.svg';
 import './css/Decouverte.css';
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Col, Row, Button} from "react-bootstrap";
@@ -20,7 +19,6 @@ class Decouverte extends React.Component {
         return (
             <Container className='align-items-center'>
                 <Row>
-                    <img src={logo}></img>
                     <h2 class='title'>Module découverte</h2>
                 </Row>
                 <Row>
@@ -29,13 +27,21 @@ class Decouverte extends React.Component {
                     </p>
                 </Row>
                 <Row>
-                    <Col><img src={ia1} className='img' ></img></Col>
-                    <Col><img src={ia2} className='img' ></img></Col>
-                    <Col><img src={ia3} className='img' ></img></Col>
-                    <Col><img src={ia4} className='img' ></img></Col>
+                    <Col>
+                        <img src={ia1} className='imglogo' ></img>
+                        <h2 class='subtitle'>1 - L'IA AU QUOTIDIEN</h2>
+                    </Col>
+                    <Col>
+                        <img src={ia2} className='imglogo' ></img>
+                        <h2 class='subtitle'>2 - PROTECTION DES DONNÉES PERSONNELLES</h2>    
+                    </Col>
+                    <Col>
+                        <img src={ia3} className='imglogo' ></img>
+                        <h2 class='subtitle'>3 - ÉTHIQUE ET TECHNOLOGIES</h2>
+                    </Col>
                 </Row>
                 <Row>
-                    <h2 className='pres' >Présentation rapide des ateliers</h2>
+                    <h2 className='pres'>Présentation rapide des ateliers</h2>
                 </Row>
                 <Row>
                     <p>

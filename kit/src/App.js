@@ -78,7 +78,6 @@ class App extends React.Component {
         <First/>
         <Decouverte/>
         <At1/>
-
       </div>
     );
   }
