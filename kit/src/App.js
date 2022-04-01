@@ -12,6 +12,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import Row from 'react-bootstrap/Row';
 // import Container from 'react-bootstrap/Container';
 import { Container, Col, Row, Button } from "react-bootstrap";
+import Sent from "./sentimentModule.js";
 
 // function that returns window size
 function getWindowSize() {
@@ -78,7 +79,7 @@ class App extends React.Component {
         <First/>
         <Decouverte/>
         <At1/>
-
+        {/* <Sent/> */}
       </div>
     );
   }
