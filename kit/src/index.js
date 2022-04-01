@@ -4,6 +4,14 @@ import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import WebFont from 'webfontloader';
+
+// load fonts with webfontloader
+WebFont.load({
+    google: {
+        families: ['Sen', 'Roboto']
+    }
+});
 
 
 ReactDOM.render(<React.StrictMode>  <App /> </React.StrictMode>, document.getElementById('root'));
