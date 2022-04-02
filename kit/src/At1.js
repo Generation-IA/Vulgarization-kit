@@ -16,7 +16,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 class At1 extends React.Component {
   constructor(props) {
     super(props);
-    this.cvRef = React.createRef();
+    this.cvP5 = React.createRef();
     this.nlpRef = React.createRef();
   }
 
@@ -26,12 +26,12 @@ class At1 extends React.Component {
   SentimentModule = SentimentModule;
 
   start = () => {
-    this.cvP5 = new p5(this.SentimentModule, this.nlpRef.current);
+    this.cvP5 = new p5(this.SentimentModule, this.cvP5.current);
   };
 
   sentimentAnalysis = () => {
     this.cvP5.remove();
-    this.cvP5 = new p5(this.SentimentModule, this.nlpRef.current);
+    this.cvP5 = new p5(this.SentimentModule, this.cvP5.current);
   };
 
   render() {
@@ -79,7 +79,8 @@ class At1 extends React.Component {
         </Row>
         <Row>
           <div class="rect1">
-            <div ref={this.cvRef} class="rect2"></div>
+            <div ref={this.cvP5} class="rect2"></div>
+            <Button onClick={this.start}>Start</Button>
           </div>
         </Row>
         <Row>
