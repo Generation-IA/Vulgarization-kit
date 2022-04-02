@@ -1,13 +1,13 @@
-.main {
-    max-width: 100%;
-    height: auto;
-    width: auto; /* ie8 */
+.logo{
+    /*set image maximum size*/
+    max-width: 795.16px;
+    max-height: 365px;
 }
 
-.topleft {
-    position: absolute;
-width: 69px;
-height: 84px;
-left: 395.99px;
-top: 258.95px;
+.chbutton{
+    /*send image to the right*/
+    float: right;
+    /*set image maximum size*/
+    max-width: 245px;
+    max-height: 71px;
 }
