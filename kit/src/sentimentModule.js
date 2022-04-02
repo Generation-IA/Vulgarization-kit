@@ -7,7 +7,9 @@ const SentimentModule = (p) => {
   let inputBox;
   let sentimentResult;
   p.setup = () => {
-    p.noCanvas();
+    // p.noCanvas();
+    var canvas = p.createCanvas(1000,1000);
+    canvas.parent('nplDiv'); 
     // initialize sentiment
     sentiment = ml5.sentiment("movieReviews", modelReady);
 

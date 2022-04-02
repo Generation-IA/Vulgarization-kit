@@ -86,8 +86,9 @@ class At1 extends React.Component {
           <center>
             <h1 class="nlp">Nlp modules here !</h1>
             <Col>
-              <input class="input"></input>
+              <input class="input" placeholder="How are you doing ?" id="nlpInput"></input>
               <Button ref={this.nlpRef}>Submit</Button>
+              <div id='nplDiv'></div>
             </Col>
           </center>
         </Row>
