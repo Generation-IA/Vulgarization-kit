@@ -2,12 +2,25 @@
     /*set image maximum size*/
     max-width: 795.16px;
     max-height: 365px;
+    /*set image in the center*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .chbutton{
     /*send image to the right*/
     float: right;
     /*set image maximum size*/
+    max-width: 245px;
+    max-height: 71px;
+}
+
+.logorow{
+    /* Add bottom padding */
+    padding-bottom: 160px;
+}
+
+.decouv{
     max-width: 245px;
     max-height: 71px;
 }
