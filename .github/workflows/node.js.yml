@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: "./kit/package-lock.json"
     - run: npm run build --if-present
       working-directory: ./kit
     - run: npm test
