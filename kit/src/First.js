@@ -14,7 +14,7 @@ class First extends React.Component {
         return (
             <Container>
 
-                <Row>
+                <Row className='top'>
                     <Col>
                     </Col>
                     <Col sm={2}>
@@ -26,11 +26,16 @@ class First extends React.Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row class='logorow'>
+                <Row>
                         <img src={logo} alt="logo" className='logo'></img>
                 </Row>
-                <Row>
-                    <img className="decouv" src={button3}></img>
+                <Row className='logorow'>
+                    <Col></Col>
+                    <Col>
+                        <img className="decouv" src={button3}></img>
+                    </Col>
+                    <Col></Col>
+                    
                 </Row>
             </Container>
         )
