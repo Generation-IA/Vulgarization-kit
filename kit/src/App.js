@@ -5,6 +5,7 @@ import SketchPose from "./cv/pose_detect.js";
 import SketchFace from "./cv/face_detect.js";
 import SketchHand from "./cv/hand_detect.js";
 import First from "./First.js";
+import Presentation from "./Presentation.js";
 import Decouverte from "./Decouverte.js";
 import At1 from "./At1.js";
 import "bootstrap/dist/css/bootstrap.css";
@@ -76,6 +77,7 @@ class App extends React.Component {
     return (
       <div class="center">
         <First/>
+        <Presentation/>
         <Decouverte/>
         <At1/>
       </div>

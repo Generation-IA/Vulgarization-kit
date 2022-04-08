@@ -17,7 +17,7 @@ class Decouverte extends React.Component {
 
     render() {
         return (
-            <Container className='align-items-center'>
+            <Container>
                 <Row>
                     <h2 class='title'>Module découverte</h2>
                 </Row>
@@ -51,11 +51,6 @@ class Decouverte extends React.Component {
                         <br></br>Atelier 4:<br></br> {this.text}
                 </p>
                 </Row>
-                {/* <Row>
-                    <Button variant="primary" onClick={this.start}>
-                        Commencer
-                    </Button>
-                </Row> */}
             </Container>
         )
 
