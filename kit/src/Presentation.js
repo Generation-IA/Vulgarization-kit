@@ -2,6 +2,8 @@ import React from 'react';
 import './css/Presentation.css';
 import insta from './img/insta-1.png';
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { Parallax } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 class Presentation extends React.Component {
     constructor(props) {
@@ -17,9 +19,9 @@ class Presentation extends React.Component {
     }
 
     render() {
-            return (
-                <Container>
-                    <Row>
+        return (
+            <Container>
+                <Row>
                     <Col sm={6}>
                         <Row>
                             <h1 className='titlepres'>Présentation du projet</h1>
@@ -29,12 +31,20 @@ class Presentation extends React.Component {
                         </Row>
                     </Col>
                     <Col>
-                        <img src={insta} alt="insta" className='insta'></img>
+                        <ParallaxProvider>
+                            <Parallax
+                                className="custom-class"
+                                translateY={['100px', '0px']}
+                                tagOuter="figure"
+                            >
+                                <img src={insta} alt="insta" className='insta'></img>
+                            </Parallax>
+                        </ParallaxProvider>
                     </Col>
-                    </Row>
-                </Container>
-            )
-        }
+                </Row>
+            </Container>
+        )
     }
+}
 
 export default Presentation;
