@@ -1,13 +1,38 @@
-.main {
-    max-width: 100%;
-    height: auto;
-    width: auto; /* ie8 */
+.logo{
+    /*set image maximum size*/
+    max-width: 795.16px;
+    max-height: 365px;
+    /*set image in the center*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.topleft {
-    position: absolute;
-width: 69px;
-height: 84px;
-left: 395.99px;
-top: 258.95px;
+.chbutton{
+    /*send image to the right*/
+    float: right;
+    /*set image maximum size*/
+    max-width: 245px;
+    max-height: 71px;
+}
+
+.logorow{
+    /* Add bottom padding */
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.decouv{
+    max-width: 245px;
+    max-height: 71px;
+    /*set image in the center*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*send image to the middle*/
+    display: block;
+}
+
+.top {
+    /* Add top padding */
+    padding-top: 10px;
 }
