@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/Presentation.css';
 import insta from './img/insta-1.png';
+import fb from './img/fb.svg';
+import linkedin from './img/linkedin.svg';
 import { Container, Col, Row, Button } from "react-bootstrap";
 import { Parallax } from 'react-scroll-parallax';
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -11,7 +13,6 @@ class Presentation extends React.Component {
     }
 
     text = () => {
-
         const el = document.querySelector('.textpres');
         const fx = new TextScramble(el)
 
@@ -38,7 +39,7 @@ class Presentation extends React.Component {
 
     render() {
         return (
-            <Container>
+            <Container className='presentation'>
                 <Row className='toppres'>
                     <Col sm={6}>
                         <Row>
@@ -54,7 +55,12 @@ class Presentation extends React.Component {
                             </p>
                         </Row>
                         <Row>
-
+                            <Col>
+                                <img src={fb} className='fb' alt='fb' />
+                            </Col>
+                            <Col>
+                                <img src={linkedin} className='linkedin' alt='linkedin' />
+                            </Col>
                         </Row>
                     </Col>
                     <Col>
