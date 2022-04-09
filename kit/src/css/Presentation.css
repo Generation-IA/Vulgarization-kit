@@ -23,6 +23,27 @@
 .insta{
     /*send image to right*/
     float: right;
+}
 
-    
+.toppres{
+    /* Add top padding */
+    padding-top: 20px;
+}
+
+.join{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    /* center the text */
+    text-align: center;
+
+    /* Add top padding */
+    padding-top: 40px;
+
 }
