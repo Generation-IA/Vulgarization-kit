@@ -12,7 +12,6 @@ import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
 // import Container from 'react-bootstrap/Container';
-import { Container, Col, Row, Button } from "react-bootstrap";
 
 // function that returns window size
 function getWindowSize() {
