@@ -59,7 +59,7 @@
     padding-top: 30px;
 
     /*Set a botom padding of 40px */
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 
     font-style: normal;
     font-weight: 700;
@@ -92,4 +92,30 @@
 	100% {
 		opacity: 1;
 	}
+}
+
+.atintro{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.decouv{
+    /*Add max size*/
+    max-width: 245px;
+    max-height: 71px;
+    /*Set image in the center*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Send image to the middle*/
+    display: block;
+
+    /*Add hover effect*/
+    cursor: pointer;
+    transition: all 0.5s;
 }
