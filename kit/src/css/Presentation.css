@@ -7,6 +7,9 @@
     text-transform: uppercase;
 
     color: #000000;
+
+    /* padding bot*/
+    padding-bottom: 20px;
 }
 
 .textpres{
