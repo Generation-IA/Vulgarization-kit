@@ -1,0 +1,76 @@
+.titlepres{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    /* padding bot*/
+    padding-bottom: 20px;
+}
+
+.textpres{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.insta{
+    /*send image to right*/
+    float: right;
+}
+
+.toppres{
+    /* Add top padding */
+    padding-top: 20px;
+}
+
+.join{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    /* center the text */
+    text-align: center;
+
+    /* Add top padding */
+    padding-top: 40px;
+}
+
+.fb{
+    /*add image max-width*/
+    max-width: 80px;
+    /*add image max-height*/
+    max-height: 80px;
+
+    /*send image to right*/
+    float: right;
+}
+
+.linkedin{
+    /*add image max-width*/
+    max-width: 80px;
+    /*add image max-height*/
+    max-height: 80px;
+
+    /*send image to left*/
+    float: left;
+}
+
+.presentation{
+    /* Add bottom padding */
+    padding-bottom: 100px;
+}
