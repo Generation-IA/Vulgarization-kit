@@ -104,3 +104,18 @@
 
     color: #000000;
 }
+
+.decouv{
+    /*Add max size*/
+    max-width: 245px;
+    max-height: 71px;
+    /*Set image in the center*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Send image to the middle*/
+    display: block;
+
+    /*Add hover effect*/
+    cursor: pointer;
+    transition: all 0.5s;
+}

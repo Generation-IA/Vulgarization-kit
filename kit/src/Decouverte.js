@@ -2,6 +2,7 @@ import React from 'react';
 import ia1 from './img/ia-1.svg';
 import ia2 from './img/ia-2.svg';
 import ia3 from './img/ia-3.svg';
+import decouv from './img/Decouvrir.png';
 import './css/Decouverte.css';
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Col, Row } from "react-bootstrap";
@@ -118,6 +119,7 @@ class Decouverte extends React.Component {
                         </Parallax>
                     </ParallaxProvider>
                 </Row>
+                <img src={decouv} className='decouv' alt='decouv'></img>
             </Container>
         )
     }
