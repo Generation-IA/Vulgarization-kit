@@ -1,0 +1,39 @@
+.title_expl1{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.text_expl1_p3{
+    /* padding bot*/
+    padding-bottom: 30px;
+}
+
+.learn_more{
+    /* center image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Change mouse cursor on hover */
+    cursor: pointer; 
+}
