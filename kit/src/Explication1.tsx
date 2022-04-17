@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import './css/Explication1.css'
 import body_text from './Ressources/Explication1.json'
-import learn from './img/learn_more.png'
+const learn = require('./img/learn_more.png')
 
 class Explication1 extends React.Component {
     render() {
