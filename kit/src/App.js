@@ -8,6 +8,7 @@ import First from "./First.js";
 import Presentation from "./Presentation.js";
 import Decouverte from "./Decouverte.js";
 import At1 from "./At1.js";
+import Explication1 from "./Explication1.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
@@ -75,10 +76,11 @@ class App extends React.Component {
   render() {
     return (
       <div class="center">
-        <First/>
-        <Presentation/>
-        <Decouverte/>
-        <At1/>
+        <First />
+        <Presentation />
+        <Decouverte />
+        <At1 />
+        <Explication1 />
       </div>
     );
   }
