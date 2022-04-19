@@ -1,0 +1,31 @@
+.at2_op{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.at2_text{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.at2{
+    /* Add top padding */
+    padding-top: 80px;
+}
+
+.at2_row2{
+    /* Add top padding */
+    padding-top: 80px;
+}

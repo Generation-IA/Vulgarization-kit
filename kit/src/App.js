@@ -8,6 +8,7 @@ import First from "./First.js";
 import Presentation from "./Presentation.js";
 import Decouverte from "./Decouverte.js";
 import At1 from "./At1.js";
+import At2 from "./At2.tsx";
 import Explication1 from "./Explication1.tsx";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
@@ -81,6 +82,7 @@ class App extends React.Component {
         <Decouverte />
         <At1 />
         <Explication1 />
+        <At2 />
       </div>
     );
   }
