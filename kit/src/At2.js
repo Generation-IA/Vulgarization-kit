@@ -23,6 +23,8 @@ class At2 extends React.Component {
   
     start = () => {
       this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
+      // prevent this from being called twice
+      
     };
   
     objDetector = () => {
@@ -47,8 +49,10 @@ class At2 extends React.Component {
   
     stopModel = () => {
       this.cvP5.remove();
+      this.cvP5.removeElements();
     };
-  
+    
+
     render() {
         return (
             <Container className="at2">
