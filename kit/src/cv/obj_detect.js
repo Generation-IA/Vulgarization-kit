@@ -8,9 +8,8 @@ const SketchObj = (p) => {
     let detections = [];
 
     p.setup = () => {
-      p.createCanvas(1280, 720, p5.WEBGL);
+      p.createCanvas(640, 480);
       video = p.createCapture(p5.VIDEO, videoReady)
-      video.size(1280, 720);
       video.volume(0);
       video.hide();
     };
@@ -33,7 +32,7 @@ const SketchObj = (p) => {
     }
   
     p.draw = () => {
-      p.image(video, 0, 0, 1280, 720);
+      p.image(video, 0, 0);
   
       
       for (let i = 0; i < detections.length; i += 1) {

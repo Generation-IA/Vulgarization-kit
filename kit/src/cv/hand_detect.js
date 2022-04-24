@@ -7,11 +7,9 @@ const SketchHand = (p) => {
     let hands = [];
 
     p.setup = () => {
-        p.createCanvas(1280, 720);
+        p.createCanvas(640, 480);
         video = p.createCapture(p5.VIDEO);
-        video.size(1280, 720);
         video.volume(0);
-
         handpose = ml5.handpose(video, modelReady);
 
         // This sets up an event that fills the global variable "predictions"
@@ -29,7 +27,7 @@ const SketchHand = (p) => {
     }
 
     p.draw =() => {
-        p.image(video, 0, 0, 1280, 720);
+        p.image(video, 0, 0);
 
         // We can call both functions to draw all keypoints and the skeletons
         drawKeypoints();
