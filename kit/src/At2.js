@@ -22,9 +22,12 @@ class At2 extends React.Component {
     SketchHand = SketchHand;
   
     start = () => {
+        // Check if a sketch has already been started
+        if (this.cvP5) {
+            // exit if a sketch has already been started
+            return;
+        }
       this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
-      // prevent this from being called twice
-      
     };
   
     objDetector = () => {

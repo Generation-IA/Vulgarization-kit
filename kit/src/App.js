@@ -31,10 +31,10 @@ class App extends React.Component {
     var ca = decodedCookie.split(";");
     for (var i = 0; i < ca.length; i++) {
       var c = ca[i];
-      while (c.charAt(0) == " ") {
+      while (c.charAt(0) === " ") {
         c = c.substring(1);
       }
-      if (c.indexOf(name) == 0) {
+      if (c.indexOf(name) === 0) {
         return c.substring(name.length, c.length);
       }
     }
@@ -47,10 +47,10 @@ class App extends React.Component {
     // froce desktop mode for mobile browser
     // get the cookie value for view mode
     var viewMode = this.getCookie("viewMode");
-    if (viewMode == "mobile") {
+    if (viewMode === "mobile") {
       document.getElementById("viewMode").checked = true;
     }
-    else if (viewMode == "desktop") {
+    else if (viewMode === "desktop") {
       // Set scale to 1
       document.getElementById("scale").value = 1;
     }
