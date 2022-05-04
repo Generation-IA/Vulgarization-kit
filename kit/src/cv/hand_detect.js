@@ -5,10 +5,13 @@ const SketchHand = (p) => {
     let handpose;
     let video;
     let hands = [];
+    let width = 760;
+    let height = 1070;
 
     p.setup = () => {
-        p.createCanvas(640, 480);
+        p.createCanvas(1070, 760);
         video = p.createCapture(p5.VIDEO);
+        video.size(width, height);
         video.volume(0);
         handpose = ml5.handpose(video, modelReady);
 
@@ -27,7 +30,7 @@ const SketchHand = (p) => {
     }
 
     p.draw =() => {
-        p.image(video, 0, 0);
+        p.image(video, 0, 0, width, height);
 
         // We can call both functions to draw all keypoints and the skeletons
         drawKeypoints();
