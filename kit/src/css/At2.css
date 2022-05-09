@@ -1,4 +1,4 @@
-.at2_op{
+.at2_op {
     font-family: 'Sen';
     font-style: normal;
     font-weight: 700;
@@ -9,7 +9,7 @@
     color: #000000;
 }
 
-.at2_text{
+.at2_text {
     font-family: 'Sen';
     font-style: normal;
     font-weight: 400;
@@ -20,28 +20,28 @@
     color: #000000;
 }
 
-.at2{
+.at2 {
     /* Add top padding */
     padding-top: 80px;
 }
 
-.at2_row2{
+.at2_row2 {
     /* Add top padding */
     padding-top: 80px;
 }
 
-.at2_canvas{
-    
+.at2_canvas {
+
     width: 1265px;
     height: 839px;
-  
+
     /*top: 3889px;*/
-  
+
     background: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #2400FF 360deg);
     border-radius: 110px;
 }
 
-.at2_act{
+.at2_act {
     /* activité */
 
     font-family: 'Sen';
@@ -59,7 +59,21 @@
     padding-top: 80px;
 }
 
-.at2_button_grp{
+.at2_button_grp {
     /* Send button to left */
     float: left;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import { ButtonGroup, Col, Container, Row , Button} from "react-bootstrap";
 import "./css/At2.css"
 import at2_text from "./Ressources/At2.json"
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import p5 from "p5";
 import SketchObj from "./cv/obj_detect.js";
 import SketchPose from "./cv/pose_detect.js";
@@ -51,7 +50,7 @@ class At2 extends React.Component {
     };
   
     stopModel = () => {
-      this.cvP5.remove();
+      // this.cvP5.remove();
       this.cvP5.removeElements();
     };
     
@@ -64,14 +63,7 @@ class At2 extends React.Component {
                 </Row>
                 <Row className="at2_row2">
                     <Col sm={4}>
-                        <ParallaxProvider>
-                            <Parallax
-                                className="custom-class"
-                                rotate={[-360, 360]}
-                            >
-                                <img className='at2_logo' src={at2_logo} alt='at2_logo' />
-                            </Parallax>
-                        </ParallaxProvider>
+                                <img className='at2_logo rotate' src={at2_logo} alt='at2_logo' />
                     </Col>
                     <Col>
                         <h2 className="at2_op">Objectifs pédagogiques</h2>
