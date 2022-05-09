@@ -19,6 +19,7 @@ class At1 extends React.Component {
     super(props);
     this.cvP5 = React.createRef();
     this.nlpRef = React.createRef();
+    this.CharRNNRef = React.createRef();
   }
 
   // Variable with fake lorem ipsum text
@@ -87,20 +88,19 @@ class At1 extends React.Component {
         <Row>
           <div class="rect1">
             <div ref={this.cvP5} class="rect2"></div>
-            <Button onClick={this.start}>Start</Button>
+            {/* <Button onClick={this.start}>Start</Button> */}
           </div>
         </Row>
         <Row>
           <center>
             <h1 class="nlp">Nlp modules here !</h1>
             <Col>
-              <input class="input" placeholder="How are you doing ?" id="nlpInput"></input>
-              <Button ref={this.nlpRef}>Submit</Button>
-              <div id='nplDiv'></div>
+              <Button ref={this.cvP5} onClick={this.start}>Démarrer</Button>
+              <div id='nlpDiv'></div>
             </Col>
             <Col>
-            <Button ref={this.nlpRef}>charRNN</Button>
-            <div id='charRNNDiv'></div>
+              <Button ref={this.cvP5}>charRNN</Button>
+              <div id='charRNNDiv'></div> 
             </Col>
           </center>
         </Row>

@@ -15,15 +15,15 @@ let original;
 
 p.setup = () => {
   // noCanvas();
-  var canvas = p.createCanvas(1000,1000);
-  canvas.parent('ncharRNNDiv'); 
+  var canvas = p.createCanvas(100,100);
+  canvas.parent('charRNNDiv'); 
   // Create the LSTM Generator passing it the model directory
   charRNN = ml5.charRNN('https://raw.githubusercontent.com/ml5js/ml5-data-and-models/main/models/charRNN/woolf/', modelReady);
 
   // Grab the DOM elements
   textInput = p.select('#textInput');
   lengthSlider = p.select('#lenSlider');
-  tempSlider = p.select('#tempSlider');
+  tempSlider = p.select('#temp');
 
   // Run "changing" anytime something changes
   textInput.input(changing);
@@ -43,7 +43,7 @@ function modelReady() {
 function checkGenerate() {
   const passed = p.millis() - last;
   if (passed > 500 && !generated) {
-    generate();
+    p.generate();
     generated = true;
   }
 }
