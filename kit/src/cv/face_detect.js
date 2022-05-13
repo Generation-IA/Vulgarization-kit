@@ -8,10 +8,8 @@ const SketchFace = (p) => {
     let predictions = [];
     
     p.setup = () => {
-        p.createCanvas(1280, 720);
-        p.centerCanvas();
+        p.createCanvas(640, 480);
         video = p.createCapture(p5.VIDEO)
-        video.size(1280, 720);
         video.volume(0);
         facemesh = ml5.facemesh(video, modelReady);
     
@@ -30,7 +28,7 @@ const SketchFace = (p) => {
     }
 
     p.draw = () => {
-        p.image(video, 0, 0, 1280, 720);
+        p.image(video, 0, 0);
         
         // We call function to draw all keypoints
         drawKeypoints();
