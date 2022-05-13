@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonGroup, Col, Container, Row , Button} from "react-bootstrap";
+import { ButtonGroup, Col, Container, Row, Button } from "react-bootstrap";
 import "./css/At2.css"
 import at2_text from "./Ressources/At2.json"
 import p5 from "p5";
@@ -13,47 +13,49 @@ const at2_logo = require("./img/at2_logo.png");
 class At2 extends React.Component {
     constructor(props) {
         super(props);
-        this.cvRef = React.createRef() 
+        this.cvRef = React.createRef()
     }
     SketchObj = SketchObj;
     SketchPose = SketchPose;
     SketchFace = SketchFace;
     SketchHand = SketchHand;
-  
+
     start = () => {
         // Check if a sketch has already been started
         if (this.cvP5) {
             // exit if a sketch has already been started
             return;
         }
-      this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
+        this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
     };
-  
+
     objDetector = () => {
-      this.cvP5.remove();
-      this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
+        this.cvP5.remove();
+        this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
     };
-  
+
     PoseNet = () => {
-      this.cvP5.remove();
-      this.cvP5 = new p5(this.SketchPose, this.cvRef.current);
+        this.cvP5.remove();
+        this.cvP5 = new p5(this.SketchPose, this.cvRef.current);
     };
-  
+
     Facemesh = () => {
-      this.cvP5.remove();
-      this.cvP5 = new p5(this.SketchFace, this.cvRef.current);
+        this.cvP5.remove();
+        this.cvP5 = new p5(this.SketchFace, this.cvRef.current);
     };
-  
+
     HandPose = () => {
-      this.cvP5.remove();
-      this.cvP5 = new p5(this.SketchHand, this.cvRef.current);
+        this.cvP5.remove();
+        this.cvP5 = new p5(this.SketchHand, this.cvRef.current);
     };
-  
+
     stopModel = () => {
-      // this.cvP5.remove();
-      this.cvP5.removeElements();
+        this.cvP5.remove();
+        this.cvP5.removeElements();
+        // reload the page
+        window.location.reload();
     };
-    
+
 
     render() {
         return (
@@ -63,7 +65,7 @@ class At2 extends React.Component {
                 </Row>
                 <Row className="at2_row2">
                     <Col sm={4}>
-                                <img className='at2_logo rotate' src={at2_logo} alt='at2_logo' />
+                        <img className='at2_logo rotate' src={at2_logo} alt='at2_logo' />
                     </Col>
                     <Col>
                         <h2 className="at2_op">Objectifs pédagogiques</h2>
@@ -90,7 +92,7 @@ class At2 extends React.Component {
                     <div className="rect1">
                         <div ref={this.cvRef} className="rect2"></div>
                         <div ></div>
-                        
+
                     </div>
                 </Row>
             </Container>
