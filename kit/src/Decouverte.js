@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { Parallax } from 'react-scroll-parallax';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Bounce from 'react-reveal/Bounce';
 
 class Decouverte extends React.Component {
 
@@ -55,16 +56,16 @@ class Decouverte extends React.Component {
                 </Row>
                 <Row>
                     <p class='text'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Proin felis dui, elementum eget viverra ac, lobortis volutpat urna. 
-                        Integer scelerisque id dui ut condimentum. Vestibulum iaculis in 
-                        eros id viverra. Ut lacinia dolor sed lobortis elementum. 
-                        Curabitur non varius felis, varius placerat massa. Donec orci velit, 
-                        mattis non condimentum eu, feugiat eu dui. Ut sem risus, 
-                        ornare a scelerisque ut, ultrices id urna. Vivamus mollis faucibus 
-                        ante, non cursus orci vestibulum non. Aliquam sed magna et odio 
-                        pharetra laoreet non sit amet mauris. Curabitur malesuada vestibulum 
-                        risus, sed accumsan lacus semper sit amet. Nullam hendrerit massa a 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin felis dui, elementum eget viverra ac, lobortis volutpat urna.
+                        Integer scelerisque id dui ut condimentum. Vestibulum iaculis in
+                        eros id viverra. Ut lacinia dolor sed lobortis elementum.
+                        Curabitur non varius felis, varius placerat massa. Donec orci velit,
+                        mattis non condimentum eu, feugiat eu dui. Ut sem risus,
+                        ornare a scelerisque ut, ultrices id urna. Vivamus mollis faucibus
+                        ante, non cursus orci vestibulum non. Aliquam sed magna et odio
+                        pharetra laoreet non sit amet mauris. Curabitur malesuada vestibulum
+                        risus, sed accumsan lacus semper sit amet. Nullam hendrerit massa a
                         ipsum feugiat, vitae rutrum urna pellentesque. In vitae posuere nibh.
                     </p>
                 </Row>
@@ -83,41 +84,23 @@ class Decouverte extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <ParallaxProvider>
-                        <Parallax
-                            className="custom-class"
-                            translateX={['30%', '-10%']}
-                            tagOuter="figure"
-                        >
-                            <p className='atintro'><strong>ATELIER 1 - L'IA AU QUOTIDIEN</strong></p>
-                            {this.text()}
-                        </Parallax>
-                    </ParallaxProvider>
+                    <Bounce right>
+                        <p className='atintro'><strong>ATELIER 1 - L'IA AU QUOTIDIEN</strong></p>
+                        {this.text()}
+                    </Bounce>
                 </Row>
                 <Row>
-                    <ParallaxProvider>
-                        <Parallax
-                            className="custom-class"
-                            translateX={['-25%', '18%']}
-                            tagOuter="figure"
-                        >
-                            <p className='atintro'><strong>ATELIER 2 - PROTECTION DES DONNÉES PERSONNELLES</strong></p>
-                            {this.text()}
-                        </Parallax>
-                    </ParallaxProvider>
+                    <Bounce left>
+                        <p className='atintro'><strong>ATELIER 2 - PROTECTION DES DONNÉES PERSONNELLES</strong></p>
+                        {this.text()}
+                    </Bounce>
 
                 </Row>
                 <Row>
-                    <ParallaxProvider>
-                        <Parallax
-                            className="custom-class"
-                            translateX={['20%', '-25%']}
-                            tagOuter="figure"
-                        >
-                            <p className='atintro'><strong>ATELIER 3 - ÉTHIQUE ET TECHNOLOGIES</strong></p>
-                            {this.text()}
-                        </Parallax>
-                    </ParallaxProvider>
+                    <Bounce right>
+                        <p className='atintro'><strong>ATELIER 3 - ÉTHIQUE ET TECHNOLOGIES</strong></p>
+                        {this.text()}
+                    </Bounce>
                 </Row>
                 <img src={decouv} className='decouv' alt='decouv'></img>
             </Container>
