@@ -29,7 +29,7 @@ jobs:
         cache-dependency-path: "./kit/package-lock.json"
     - name: npm ci, build and test
       run: |
-        npm ci
-        npm run build --if-present
+        npm ci --force
+        npm run build --force
       working-directory: ./kit
       
