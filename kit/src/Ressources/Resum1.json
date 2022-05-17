@@ -1,0 +1,8 @@
+{
+    "name": "body_text",
+    "text": {
+        "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus. Sed vitae mollis tellus, nec rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur non augue mollis, ullamcorper felis quis, tincidunt dolor. Donec nec purus ac sem pretium dictum.",
+        "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus.",
+        "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus. Sed vitae mollis tellus, nec rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+    }
+}
