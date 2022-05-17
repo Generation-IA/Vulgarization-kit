@@ -5,6 +5,7 @@ import Decouverte from "./Decouverte.js";
 import At1 from "./At1.js";
 import At2 from "./At2.js";
 import Explication1 from "./Explication1.tsx";
+import Tinder1 from "./Tinder1.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
@@ -70,6 +71,7 @@ class App extends React.Component {
         <Decouverte />
         <At1 />
         <Explication1 />
+        <Tinder1 />
         <At2 />
       </div>
     );
