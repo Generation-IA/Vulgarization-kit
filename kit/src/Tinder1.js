@@ -3,6 +3,8 @@ import userEvent from "@testing-library/user-event";
 import TinderCard from "react-tinder-card";
 import "./css/Tinder1.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Stack from '@mui/material/Stack';
+import { Container } from "react-bootstrap";
 
 function Tinder1() {
   const questions = [
@@ -87,29 +89,32 @@ function Tinder1() {
   };
 
   return (
-    <div className="App">
+    <Container className="Tinder">
+      <h2 class='title'>Vrai / Faux</h2>
       <p>QUIZZ TIME BITCH</p>
 
-      {questions.map((item, index) => (
-        <center>
-          <TinderCard
-            ref={childRefs[index]}
-            className="swipe"
-            key={item.name}
-            onSwipe={(dir) => swiped(dir, item.name, index)}
-            onCardLeftScreen={() => outOfFrame(item.name, index)}
-            preventSwipe={["up", "down"]}
-          >
-            <img src="cardLogo.svg" alt="" />
-            <div className="title">
-              Culture <br /> Générale
-            </div>
-            <h1>
-              {item.index} : {item.title} <br />
-              {/* <li class="answer">{item.answers[0]}</li>
+      <h2 class='intox'>Info ou intox?</h2>
+      <Stack spacing={-40}>
+        {questions.map((item, index) => (
+          <center>
+            <TinderCard
+              ref={childRefs[index]}
+              className="swipe"
+              key={item.name}
+              onSwipe={(dir) => swiped(dir, item.name, index)}
+              onCardLeftScreen={() => outOfFrame(item.name, index)}
+              preventSwipe={["up", "down"]}
+            >
+              <img src="cardLogo.svg" alt="" />
+              <div className="tinderTitle">
+                Culture <br /> Générale
+              </div>
+              <h1>
+                {item.index} : {item.title} <br />
+                {/* <li class="answer">{item.answers[0]}</li>
               <li class="answer">{item.answers[1]}</li> */}
-            </h1>
-            {/* <div className="buttons">
+              </h1>
+              {/* <div className="buttons">
               <button
                 type="button"
                 class="btn btn-danger"
@@ -134,11 +139,12 @@ function Tinder1() {
               >
                 Swipe right!
               </button> */}
-            {/* </div>{" "} */}
-          </TinderCard>
-        </center>
-      ))}
-    </div>
+              {/* </div>{" "} */}
+            </TinderCard>
+          </center>
+        ))}
+      </Stack>
+    </Container>
   );
 }
 
