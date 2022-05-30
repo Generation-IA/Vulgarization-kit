@@ -1,12 +1,10 @@
 # Create an image from node 16.14
 FROM node:16-alpine
-# Clone the repository from github
-WORKDIR /app
 
-COPY . ./
+COPY . ./usr/src/app
 
-WORKDIR /app/kit
+WORKDIR /usr/src/app/kit
 
-RUN npm install
+RUN npm install --force
 
 CMD ["npm", "start"]
