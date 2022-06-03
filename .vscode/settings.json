@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/v1%40service": "file:///home/zakenobi/Documents/4A/aimythbuster/Vulgarization-kit/kit_deploy.yml"
+    }
+}
