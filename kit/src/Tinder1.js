@@ -6,22 +6,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Stack from '@mui/material/Stack';
 import { Container } from "react-bootstrap";
 
+// correct answer counter
+let correctAnswer = 0;
+
 function Tinder1() {
   const questions = [
     {
       index: 3,
       title: "Do you think robots will rule the world ?",
       answers: ["Yes", "No"],
+      correctAnswer: "No",
     },
     {
       index: 2,
       title: "Are you interested in AI ?",
       answers: ["Yes", "No"],
+      correctAnswer: "Yes",
     },
     {
       index: 1,
       title: "Have you ever heard about AI ?",
       answers: ["Yes", "No"],
+      correctAnswer: "Yes",
     },
   ];
 

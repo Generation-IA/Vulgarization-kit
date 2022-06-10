@@ -1,5 +1,7 @@
 .Tinder {
   text-align: center;
+  /*Set height to 300px of the screen*/
+  height: 600px;
 }
 
 .swipe {
