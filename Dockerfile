@@ -1,10 +1,3 @@
-# Create an image from node 16.14
-FROM node:16-alpine
+FROM nginx:stable-alpine
 
-COPY . ./usr/src/app
-
-WORKDIR /usr/src/app/kit
-
-RUN npm install --force
-
-CMD ["npm", "start"]
+COPY kit/build/ /usr/share/nginx/html 
