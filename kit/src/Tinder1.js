@@ -6,9 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Stack from '@mui/material/Stack';
 import { Container } from "react-bootstrap";
 
-// correct answer counter
-let correctAnswer = 0;
-
 function Tinder1() {
   const questions = [
     {
@@ -30,6 +27,13 @@ function Tinder1() {
       correctAnswer: "Yes",
     },
   ];
+
+  // build the list of correct answers
+  const correctAnswers = useMemo(() => {
+    return questions.map((question) => question.correctAnswer);
+  }
+  , [questions]);
+  console.log(correctAnswers);
 
   const results = [];
 
@@ -70,6 +74,8 @@ function Tinder1() {
   const outOfFrame = (name, idx) => {
     console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current);
     currentIndexRef.current >= idx && childRefs[idx].current.restoreCard();
+    // update the score
+    updateScore();
   };
 
   const swipe = async (dir) => {
@@ -94,6 +100,27 @@ function Tinder1() {
     console.log(myIdentifier + " left the screen");
   };
 
+  // function that counts the number of correct answers
+  const countCorrectAnswers = () => {
+    let count = 0;
+    for (let i = 0; i < results.length; i++) {
+      if (results[i] === correctAnswers[i]) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  // function that updates the score
+  const updateScore = () => {
+    let score = countCorrectAnswers();
+    // get html element
+    let scoreElement = document.querySelector(".rslt");
+    // update the score
+    scoreElement.innerText = score + "/" + questions.length;
+  }
+
+  
   return (
     <Container className="Tinder">
       <h2 class='title'>Vrai / Faux</h2>
@@ -101,6 +128,7 @@ function Tinder1() {
 
       <h2 class='intox'>Info ou intox?</h2>
       <Stack spacing={-40}>
+        
         {questions.map((item, index) => (
           <center>
             <TinderCard
@@ -150,6 +178,7 @@ function Tinder1() {
           </center>
         ))}
       </Stack>
+      <h2 class='rslt'>{countCorrectAnswers()} / {questions.length}</h2>
     </Container>
   );
 }
