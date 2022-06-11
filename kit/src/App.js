@@ -1,14 +1,11 @@
 import React from "react";
-import p5 from "p5";
-import SketchObj from "./cv/obj_detect.js";
-import SketchPose from "./cv/pose_detect.js";
-import SketchFace from "./cv/face_detect.js";
-import SketchHand from "./cv/hand_detect.js";
 import First from "./First.js";
 import Presentation from "./Presentation.js";
 import Decouverte from "./Decouverte.js";
 import At1 from "./At1.js";
+import At2 from "./At2.js";
 import Explication1 from "./Explication1.tsx";
+import Resum1 from "./Resum1.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
@@ -27,10 +24,36 @@ class App extends React.Component {
     this.cvRef = React.createRef();
   }
 
-  // Log the window size
+  // Function that gets the cookie value
+  getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
+    // froce desktop mode for mobile browser
+    // get the cookie value for view mode
+    var viewMode = this.getCookie("viewMode");
+    if (viewMode === "mobile") {
+      document.getElementById("viewMode").checked = true;
+    }
+    else if (viewMode === "desktop") {
+      // Set scale to 1
+      document.getElementById("scale").value = 1;
+    }
   }
 
   // Log on the console the window size
@@ -40,39 +63,6 @@ class App extends React.Component {
   };
 
 
-  SketchObj = SketchObj;
-  SketchPose = SketchPose;
-  SketchFace = SketchFace;
-  SketchHand = SketchHand;
-
-  start = () => {
-    this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
-  };
-
-  objDetector = () => {
-    this.cvP5.remove();
-    this.cvP5 = new p5(this.SketchObj, this.cvRef.current);
-  };
-
-  PoseNet = () => {
-    this.cvP5.remove();
-    this.cvP5 = new p5(this.SketchPose, this.cvRef.current);
-  };
-
-  Facemesh = () => {
-    this.cvP5.remove();
-    this.cvP5 = new p5(this.SketchFace, this.cvRef.current);
-  };
-
-  HandPose = () => {
-    this.cvP5.remove();
-    this.cvP5 = new p5(this.SketchHand, this.cvRef.current);
-  };
-
-  stopModel = () => {
-    this.cvP5.remove();
-  };
-
   render() {
     return (
       <div class="center">
@@ -81,6 +71,9 @@ class App extends React.Component {
         <Decouverte />
         <At1 />
         <Explication1 />
+        <Resum1 />
+        <At2 />
+
       </div>
     );
   }

@@ -8,11 +8,9 @@ const SketchPose = (p) => {
     let poses = [];
   
     p.setup = () => {
-      p.createCanvas(1280, 720);
-      p.centerCanvas();
+      p.createCanvas(640, 480);
       // p.getContext("2d");
       video = p.createCapture(p5.VIDEO)
-      video.size(1280, 720);
       video.volume(0);
       
       poseNet = ml5.poseNet(video, modelLoaded);
@@ -28,7 +26,7 @@ const SketchPose = (p) => {
     }
   
     p.draw = () => {
-      p.image(video, 0, 0, 1280, 720);
+      p.image(video, 0, 0);
       
       drawKeypoints();
       drawSkeleton();
