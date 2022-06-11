@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kit-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: kit
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: kit
+    spec:
+      containers:
+        - name: kit
+          image: zakenobi/kit
+          ports:
+            - containerPort: 80

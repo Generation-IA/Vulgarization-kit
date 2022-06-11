@@ -1,12 +1,3 @@
-# Create an image from node 16.14
-FROM node:16-alpine
-# Clone the repository from github
-WORKDIR /app
+FROM nginx:stable-alpine
 
-COPY . ./
-
-WORKDIR /app/kit
-
-RUN npm install
-
-CMD ["npm", "start"]
+COPY kit/build/ /usr/share/nginx/html 
