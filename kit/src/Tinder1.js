@@ -5,34 +5,36 @@ import "./css/Tinder1.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Stack from '@mui/material/Stack';
 import { Container } from "react-bootstrap";
+import questions from "./Ressources/Tinder1.json";
+import logo from "./img/ia-2.svg";
 
 function Tinder1() {
-  const questions = [
-    {
-      index: 3,
-      title: "Do you think robots will rule the world ?",
-      answers: ["Yes", "No"],
-      correctAnswer: "No",
-    },
-    {
-      index: 2,
-      title: "Are you interested in AI ?",
-      answers: ["Yes", "No"],
-      correctAnswer: "Yes",
-    },
-    {
-      index: 1,
-      title: "Have you ever heard about AI ?",
-      answers: ["Yes", "No"],
-      correctAnswer: "Yes",
-    },
-  ];
+  // const questions = [
+  //   {
+  //     index: 3,
+  //     title: "Do you think robots will rule the world ?",
+  //     answers: ["Yes", "No"],
+  //     correctAnswer: "No",
+  //   },
+  //   {
+  //     index: 2,
+  //     title: "Are you interested in AI ?",
+  //     answers: ["Yes", "No"],
+  //     correctAnswer: "Yes",
+  //   },
+  //   {
+  //     index: 1,
+  //     title: "Have you ever heard about AI ?",
+  //     answers: ["Yes", "No"],
+  //     correctAnswer: "Yes",
+  //   },
+  // ];
 
   // build the list of correct answers
   const correctAnswers = useMemo(() => {
     return questions.map((question) => question.correctAnswer);
   }
-  , [questions]);
+    , [questions]);
   console.log(correctAnswers);
 
   const results = [];
@@ -120,35 +122,36 @@ function Tinder1() {
     scoreElement.innerText = score + "/" + questions.length;
   }
 
-  
+
   return (
     <Container className="Tinder">
       <h2 class='title'>Vrai / Faux</h2>
       <p>QUIZZ TIME BITCH</p>
 
-      <h2 class='intox'>Info ou intox?</h2>
-      <Stack spacing={-40}>
-        
-        {questions.map((item, index) => (
-          <center>
-            <TinderCard
-              ref={childRefs[index]}
-              className="swipe"
-              key={item.name}
-              onSwipe={(dir) => swiped(dir, item.name, index)}
-              onCardLeftScreen={() => outOfFrame(item.name, index)}
-              preventSwipe={["up", "down"]}
-            >
-              <img src="cardLogo.svg" alt="" />
-              <div className="tinderTitle">
-                Culture <br /> Générale
-              </div>
-              <h1>
-                {item.index} : {item.title} <br />
-                {/* <li class="answer">{item.answers[0]}</li>
+      <h2 class='intox'>🔥 Info ou intox?</h2>
+      <div className="Tinder-container">
+        <Stack spacing={-58}>
+
+          {questions.map((item, index) => (
+            <center>
+              <TinderCard
+                ref={childRefs[index]}
+                className="swipe"
+                key={item.name}
+                onSwipe={(dir) => swiped(dir, item.name, index)}
+                onCardLeftScreen={() => outOfFrame(item.name, index)}
+                preventSwipe={["up", "down"]}
+              >
+                <img src="cardLogo.svg" alt="" />
+                <div className="tinderTitle">
+                  Culture <br /> Générale
+                </div>
+                <h1>
+                  {item.index} : {item.title} <br />
+                  {/* <li class="answer">{item.answers[0]}</li>
               <li class="answer">{item.answers[1]}</li> */}
-              </h1>
-              {/* <div className="buttons">
+                </h1>
+                <div className="buttons">
               <button
                 type="button"
                 class="btn btn-danger"
@@ -159,25 +162,19 @@ function Tinder1() {
               </button>
               <button
                 type="button"
-                class="btn btn-primary"
-                style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
-                onClick={() => goBack()}
-              >
-                Undo swipe!
-              </button>
-              <button
-                type="button"
                 class="btn btn-success"
                 style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
                 onClick={() => swipe("right")}
               >
                 Swipe right!
-              </button> */}
-              {/* </div>{" "} */}
-            </TinderCard>
-          </center>
-        ))}
-      </Stack>
+              </button> 
+                </div>{" "}
+              </TinderCard>
+            </center>
+          ))}
+        </Stack>
+      </div>
+      <h2>Nombre de beignets capté: 🍩</h2>
       <h2 class='rslt'>{countCorrectAnswers()} / {questions.length}</h2>
     </Container>
   );

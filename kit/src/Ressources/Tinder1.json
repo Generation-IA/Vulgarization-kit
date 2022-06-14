@@ -1,0 +1,47 @@
+[
+    {
+        "index": "0",
+        "title": "Google traite plus de 3,5 milliards de requêtes chaque jour.",
+        "answers": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": "Yes"
+    },
+    {
+        "index": "1",
+        "title": "350 millions de photos sont telechargées sur facebook chaque jour.",
+        "answers": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": "Yes"
+    },
+    {
+        "index": "2",
+        "title": "5 millions de tweets sont envoyés chaque jour.",
+        "answers": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": "Yes"
+    },
+    {
+        "index": "3",
+        "title": "Utilisez des adresses électroniques différentes en fonction de vos activités: personnelles, professionnelles etc.",
+        "answers": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": "Yes"
+    },
+    {
+        "index": "4",
+        "title": "Sur internent, tout le monde ne peut pas voir ce que vous mettez en ligne: infos, photos, opinions, etc.",
+        "answers": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": "No"
+    }
+]
