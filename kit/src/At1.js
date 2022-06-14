@@ -45,7 +45,7 @@ class At1 extends React.Component {
     }
 
     // Variable with fake lorem ipsum text
-    text = "A la fin de cet atelier, tu sauras définir ce qu'est l'IA et savoir où tu en rencontres dans ta vie quotidienne. Mais qu'est ce que c'est l'IA pour toi ? "; 
+    text = " A la fin de cet atelier, tu sauras définir ce qu’est l’IA et où tu en rencontres dans ta vie quotidienne. Nous vivons dans un monde hyperconnecté dans lequel chaque interaction, de l'appel téléphonique à l'achat en passant par l'affichage d'une page web, s'ajoute à un océan de données sans fin. Avec l'arrivée de l'Internet des objets (IoT), les voitures, les réfrigérateurs, les vêtements... ceux-ci génèrent des millions de données supplémentaires chaque jour ! L &#39; objectif de ce premier épisode est de faire le point sur les mythes qui existent autour de l’IA, et de découvrir dans quelles mesures l’IA intervient dans notre quotidien.   "; 
     
 
     revealText1 = () => {
@@ -264,7 +264,7 @@ class At1 extends React.Component {
                         
                         <Row>
                             <p class="bodytext">
-                            Nous vivons dans un monde hyperconnecté dans lequel chaque interaction, de l'appel téléphonique à l'achat en passant par l'affichage d'une page web, s'ajoute à un océan de données sans fin. Avec l'arrivée de l'Internet des objets (IoT), les voitures, les réfrigérateurs, les vêtements... génèrent des millions de données supplémentaires chaque jour !                             </p>
+                            Nous &#39 vivons dans un monde hyperconnecté dans lequel chaque interaction, de l'appel téléphonique à l'achat en passant par l'affichage d'une page web, s'ajoute à un océan de données sans fin. Avec l'arrivée de l'Internet des objets (IoT), les voitures, les réfrigérateurs, les vêtements... génèrent des millions de données supplémentaires chaque jour !                             </p>
                         </Row>
                         <Row>
                         {/* <div class="btn-group" style="width:100%">
