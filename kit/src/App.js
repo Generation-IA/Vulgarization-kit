@@ -70,7 +70,6 @@ class App extends React.Component {
         <Presentation />
         <Decouverte />
         <At1 />
-        <Explication1 />
         <Resum1 />
         <At2 />
       </div>
