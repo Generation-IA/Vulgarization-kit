@@ -4,14 +4,28 @@ import './css/Sondage.css';
 import RGF from 'react-google-forms'
 import img from "./img/retourdexperience.png";
 import img2 from "./img/Endpage.png";
+import sondagebutton from "./img/Bouton-repondre_sondage.png";
 
 
 
 class Sondage extends React.Component{
-    
+    constructor(props) {
+        super(props);
+        this.display_boolean = false
+    }
+    revealSurvey = () => {
+        // reveal the text
+        if (this.display_boolean == false) {
+        document.getElementById("survey").style.display = "block";
+        this.display_boolean = true
+        }else{
+            document.getElementById("survey").style.display = "none";
+            this.display_boolean = false
+        }
+    }
+
     render(){
             
-
         return(
             
             <Container>
@@ -35,7 +49,13 @@ class Sondage extends React.Component{
             </Row>
 
             <Row>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3yKx7mjfDIMz2qfRnLfD_nj7Iw0QkBCaw1NQM2dJGxPwyIQ/viewform?embedded=true" width="640" height="1040" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+            <img class="surveybuttonimg" src={sondagebutton} onClick={this.revealSurvey}></img>
+
+            </Row>
+            <Row>
+            
+            <iframe id = "survey" style={{display: "none"}}  src="https://docs.google.com/forms/d/e/1FAIpQLSeiHQFkoiDKQCZY-FUJHN0n-N4NkrsFh2SAaNBh8VhAXRjE8Q/viewform?embedded=true" width="640" height="1002" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+            
             </Row>
             <Row>
                 <img class="titleimgendpage" src={img2}></img>
