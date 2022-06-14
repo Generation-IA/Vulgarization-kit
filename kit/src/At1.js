@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 
 
 
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -39,34 +40,186 @@ class At1 extends React.Component {
     constructor(props) {
         super(props);
         this.cvRef = React.createRef();
+        this.display_boolean5 = false
+        
     }
 
     // Variable with fake lorem ipsum text
     text = "A la fin de cet atelier, tu sauras définir ce qu'est l'IA et savoir où tu en rencontres dans ta vie quotidienne. Mais qu'est ce que c'est l'IA pour toi ? "; 
-
+    
 
     revealText1 = () => {
         // reveal the text
-        document.getElementById("text1").style.display = "block";
+        if (this.display_boolean5 == false) {
+            document.getElementById("text1").style.display = "block";
+            this.display_boolean5 = true
+            }else{
+                document.getElementById("text1").style.display = "none";
+                this.display_boolean5 = false
+            }
     }
 
     revealText2 = () => {
         // reveal the text
-        document.getElementById("text2").style.display = "block";
+        if (this.display_boolean5 == false) {
+            document.getElementById("text2").style.display = "block";
+            this.display_boolean5 = true
+            }else{
+                document.getElementById("text2").style.display = "none";
+                this.display_boolean5 = false
+            }
     }
     
     revealText3 = () => {
         // reveal the text
-        document.getElementById("text3").style.display = "block";
+        if (this.display_boolean5 == false) {
+            document.getElementById("text3").style.display = "block";
+            this.display_boolean5 = true
+            }else{
+                document.getElementById("text3").style.display = "none";
+                this.display_boolean5 = false
+            }
     }
     revealText4 = () => {
         // reveal the text
+        if (this.display_boolean5 == false) {
         document.getElementById("text4").style.display = "block";
+        this.display_boolean5 = true
+        }else{
+            document.getElementById("text4").style.display = "none";
+            this.display_boolean5 = false
+        }
     }
     revealText5 = () => {
         // reveal the text
-        document.getElementById("text5").style.display = "block";
+        if (this.display_boolean5 == false) {
+            document.getElementById("text5").style.display = "block";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("text5").style.display = "none";
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "none";
+            document.getElementById("PrincipauxMythes").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
     }
+    revealText8h = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("8h").style.display = "block";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "none";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("8h").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+    revealText8h45 = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "block";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "none";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("8h45").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+
+    revealText12h30 = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "block";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "none";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("12h30").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+
+    revealText18h = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "block";
+            document.getElementById("19h").style.display = "none";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("18h").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+
+    revealText19h = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "block";
+            this.display_boolean5 = true
+        }
+
+        else {
+            document.getElementById("19h").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+
+    revealText6PrincipauxMythes = () => {
+        // reveal the text
+        if (this.display_boolean5 == false) {
+            document.getElementById("text5").style.display = "none";
+            document.getElementById("8h").style.display = "none";
+            document.getElementById("8h45").style.display = "none";
+            document.getElementById("12h30").style.display = "none";
+            document.getElementById("18h").style.display = "none";
+            document.getElementById("19h").style.display = "none";
+            document.getElementById("PrincipauxMythes").style.display = "block";
+            this.display_boolean5 = true
+        }
+
+        else {
+
+            document.getElementById("PrincipauxMythes").style.display = "none";
+            this.display_boolean5 = false
+          }
+            
+    }
+
+
 
     render() {
         return (
@@ -81,22 +234,71 @@ class At1 extends React.Component {
                 <Row>
                     <Col>
                         <Row>
-                            <Col>
-                                <h2>Objectifs Pedagogiques</h2>
+                        <div>
+                        <Col>
+                        <ParallaxProvider>
+                            <Parallax
+                                className="custom-class"
+                                translateX={['40%', '0%']}
+                                tagOuter="figure"
+                            >
+                                <img class="side" src={side}></img>
+                            </Parallax>
+                        </ParallaxProvider>
+
+                        </Col>
+                        <Col>
+                           
+                        <Col></Col>
+                               
+                               <Col>
+                                   <h2>Objectifs Pedagogiques</h2>
+                                   <p class="bodytext">{this.text}</p>
+                               </Col>     
                             </Col>
-                            <Col sm={1}>
-                                {/* Button for text to speach */}
-                            </Col>
+                    </div>
+                    
+
+                            
                         </Row>
+                        
                         <Row>
-                            <p class="bodytext">{this.text}<br/><br/>
+                            <p class="bodytext">
                             Nous vivons dans un monde hyperconnecté dans lequel chaque interaction, de l'appel téléphonique à l'achat en passant par l'affichage d'une page web, s'ajoute à un océan de données sans fin. Avec l'arrivée de l'Internet des objets (IoT), les voitures, les réfrigérateurs, les vêtements... génèrent des millions de données supplémentaires chaque jour !                             </p>
                         </Row>
                         <Row>
-                        <       button class = "collapsible" onClick={this.revealText5}><center>Une journée type</center></button>
-                        <p id="text5" style={{display: "none"}}> 
- 
+                        {/* <div class="btn-group" style="width:100%">
+                            <button style="width:25%">Apple</button>
+                            <button style="width:25%">Samsung</button>
+                            <button style="width:25%">Sony</button>
+                            <button style="width:25%">HTC</button>
+                        </div> */}
 
+                        </Row>
+
+                        <Row>
+                        <Col>
+                        <button  class = "collapsible" onClick={this.revealText5}><center>Une journée type</center></button>
+                        </Col>
+                        <Col>
+                        <button  class = "collapsible2" onClick={this.revealText6PrincipauxMythes}><center>Principaux Mythes de l'IA</center></button>
+                        </Col>
+
+                        </Row>
+                        <Row>
+                    
+                        
+                        <div class="btn-group" id="text5" style={{display: "none"}}>
+                        <br/><br/>
+                            <button onClick={this.revealText8h} ><strong>8h</strong></button>
+                            <button onClick={this.revealText8h45}><strong>8h45</strong></button>
+                            <button onClick={this.revealText12h30}><strong>12h30</strong></button>
+                            <button onClick={this.revealText18h}><strong>18h</strong></button>
+                            <button onClick={this.revealText19h}><strong>19h</strong></button>
+                        </div>
+
+                        <p id="8h" style={{display: "none"}}> 
+                        <br/><br/>
                         <strong> 8 h : Un reveil en douceur !  </strong>
   
  Il est 8 h du matin, vous naviguez peut-être sur un réseau social tel que Facebook, Instagram, LinkedIn ou Twitter.  
@@ -107,9 +309,11 @@ class At1 extends React.Component {
   
  Savez-vous que votre fil d'actualité est unique ? Il est complètement construit et affiché pour vous, et ce en fonction de nombreux paramètres (par exemple : vos intérêts, les personnes que vous suivez, les posts que vous avez "likés"). Ainsi, lorsque vous faites défiler ce fil d'actualité, il ne s'agit pas d'un contenu fixe mais bien d’un contenu personnalisé. Des techniques sont mises en œuvre afin de vous fournir l'information la plus pertinente, à travers des contenus ciblés selon votre profil : des articles, des vidéos, des posts de votre réseau, et aussi des publicités. 
   
- <br/><br/>
-  
- <strong>  8 h 45 : Direction le lycée   </strong>
+</p>
+
+ <p id="8h45" style={{display: "none"}}> 
+                        <br/><br/>
+                <strong>  8 h 45 : Direction le lycée   </strong>
 
 
  Vous montez dans votre transport habituel pour rejoindre votre travail, et choisissez votre application musicale préférée, par exemple Spotify ou Deezer. En un clic, vous pouvez découvrir des dizaines de chansons et de podcasts recommandés ! 
@@ -118,66 +322,90 @@ class At1 extends React.Component {
   
  Vous trouverez par exemple la liste de lecture "Découvertes de la semaine", ces nouveaux titres à écouter, mise à jour chaque lundi par Spotify.  Pour constituer cette playlist, un programme d'IA a analysé vos écoutes récentes, et celles d’autres utilisateurs aux goûts proches des vôtres. 
   
- <br/><br/>
- <strong>   12 h 30 : L’heure de manger est arrivée !   </strong>
+
+</p>
 
 
- Vous rejoignez vos ami(e)s pour la pause déjeuner, et l’un d’eux vous propose de tester ce petit restaurant qui vient d’ouvrir au bout de la rue ! Vous acceptez et, pour faire baver vos amis, vous décidez de prendre une photo de votre dessert. 
-  
- Lorsque vous réalisez votre photo, l'appareil se calibre automatiquement en fonction de la scène qui va être photographiée. Derrière vos clichés réussis, il y a une application d’IA qui optimise les paramétrages de l'appareil photo pour vous. 
-  
- Vous prenez également une photo avec vos amies, et la postez sur les réseaux. Lorsque vous publiez votre photo, la plateforme vous suggère d'identifier les personnes présentes sur celle-ci. 
- Si le cliché présente des individus qui font partie de votre cercle proche, leur identification vous est proposée automatiquement. L'identification des visages est aussi une fonctionnalité facilitée par l’IA.  
+ <p id="12h30" style={{display: "none"}}> 
+                        <br/><br/>
+                        <strong>   12 h 30 : L’heure de manger est arrivée !   </strong>
 
- <br/><br/>
 
- <strong>    18 h : Retour à la maison    </strong>
+Vous rejoignez vos ami(e)s pour la pause déjeuner, et l’un d’eux vous propose de tester ce petit restaurant qui vient d’ouvrir au bout de la rue ! Vous acceptez et, pour faire baver vos amis, vous décidez de prendre une photo de votre dessert. 
+ 
+Lorsque vous réalisez votre photo, l'appareil se calibre automatiquement en fonction de la scène qui va être photographiée. Derrière vos clichés réussis, il y a une application d’IA qui optimise les paramétrages de l'appareil photo pour vous. 
+ 
+Vous prenez également une photo avec vos amies, et la postez sur les réseaux. Lorsque vous publiez votre photo, la plateforme vous suggère d'identifier les personnes présentes sur celle-ci. 
+Si le cliché présente des individus qui font partie de votre cercle proche, leur identification vous est proposée automatiquement. L'identification des visages est aussi une fonctionnalité facilitée par l’IA.  
+</p>
+
+<p id="18h" style={{display: "none"}}> 
+                        <br/><br/>
+                        <strong>    18 h : Retour à la maison    </strong>
 
 
  Quel que soit votre moyen de locomotion, vous vous appuyez sûrement sur des applis comme Google Maps ou Waze. Très pratiques, elles savent fournir des informations de trafic en temps réel. Mieux, elles savent désormais anticiper les retards (par exemple de bus ou de train). 
  Pour cela, elles utilisent l’intelligence artificielle et les données disponibles (positions des bus en temps réel, météo, etc.). 
- <br/><br/>
+
+</p>
+                        <p id="19h" style={{display: "none"}}> 
+                        <br/><br/>
  <strong>   19 h : Minute shopping     </strong>
 
  
- Le e-commerce, c’est des millions de produits à portée de clic. Vous avez peut-être déjà effectué vos achats sur Cdiscount, la Fnac ou Amazon. Ces acteurs utilisent l’IA pour vous offrir la meilleure expérience d’achat.  </p>         </Row>
+ Le e-commerce, c’est des millions de produits à portée de clic. Vous avez peut-être déjà effectué vos achats sur Cdiscount, la Fnac ou Amazon. Ces acteurs utilisent l’IA pour vous offrir la meilleure expérience d’achat. 
+  </p>        
+ {/*                                         Myths part  */}
+ <div  id="PrincipauxMythes" style={{display: "none"}}>
 
-                        <Col>
+<Col>
 
-                               <center><h2>Mythes autour de l'IA</h2></center>  <br/><br/>
-                        </Col>
-                        <Row>
+<center><h2>Mythes autour de l'IA</h2></center>  <br/><br/>
+</Col>
+<Row>
                             <p>
                             Aujourd’hui, de plus en plus de personnes découvrent le monde d l’IA. On peut imaginer que pour certaines personnes l’arrivée de l’intelligence artificielle dans leur vie effraie ou trouble les pensées en faussant certaines informations. Voici quelques mythes que vous avez surement dû lire ou entendre à propos de l’IA.                                </p>
                         </Row>
-                       
 
-                        <Col>
-                                <h3>Mythe N°1 « L’IA, plus intelligente qu’un humain. » </h3>
-                        </Col>
                         <Row>
-                        <       button class = "collapsible" onClick={this.revealText1}><center>Mythe Numéro 1</center></button>
-                        <p id="text1" style={{display: "none"}}>Les technologies capables de résoudre un problème plus efficacement ou plus rapidement que l’homme existent déjà, mais uniquement sur des tâches très spécifiques : résolution de jeux, traduction de textes en diverses langues, détection d’anomalies sur des IRM, etc. 
-                        Cependant, l’intelligence n’est pas seulement une puissance cognitive, c’est aussi la capacité à s’adapter et à se généraliser. Alors que le Deep Learning permet l’apprentissage automatique, la généralisation à tous les domaines n’est pas encore possible. 
-                        Pourquoi ? Parce que les programmes d’aujourd’hui ne sont pas encore dotés de conscience ni de compréhension du contexte </p>         </Row>
-                    </Col>
-                    <Row>
-                                <h3>Mythe N°2 « Mythe N°2 : « L’IA, destructrice d’emplois. »  </h3>
-                        </Row>
-                        <Row>
-                        <       button class = "collapsible" onClick={this.revealText2}><center>Mythe Numéro 2</center></button>
-                        <p id="text2" style={{display: "none"}}>Selon le Gartner, 1,8 millions de postes seront supprimés d’ici 2020 à cause de l’IA… Mais en contrepartie, 2,3 millions de postes seront créés ! Des chiffres qui peuvent paraître assez optimistes, à vérifier sur le long terme. Cependant, il est d’ores et déjà assuré que l’IA engendrera des changements avec des formations et des remises à niveau des personnels en entreprise
-                        Il faut donc surtout retenir les modifications des postes et non leur suppression, tout en gardant en ligne de mire les améliorations que l’IA peut nous apporter au quotidien, comme par exemple le pré-traitement de documents, apport dans la médecine (visualisation de tumeur). L’IA permet ainsi aux entreprises d’entrer dans l’ère des « services augmentés ».   </p>         </Row>
-                    
-                        <Row>
-                                <h3>Les mythes que faut-il retenir ?  </h3>
-                        </Row>
-                        <Row>
-                        <       button class = "collapsible" onClick={this.revealText3}><center>Mythe Numéro 3</center></button>
-                        <p id="text3" style={{display: "none"}}>Que faut-il en retenir ? 
-                Tout d’abord l’Intelligence Artificielle, ce n’est pas le futur mais bel et bien le présent. Il ne faut pas en avoir peur. L’IA n’a pas vocation à remplacer l’homme, mais plutôt « l’augmenter » en démultipliant ses performances. 
-                Ensuite, bien évidemment, si son utilisation est faite dans un objectif malsain, l’IA sera effrayante, négative voire destructrice. Mais mise entre de bonnes mains, elle est alors porteuse de promesses d’un avenir enthousiasmant. Tout dépend donc de l’objectif initial. 
-                Enfin, il faut comprendre le positionnement central de l’IA : située entre les données et l’algorithmie (ex. le Machine Learning), elle a vocation à rendre les offres et services plus efficaces et ainsi propulser les entreprises dans l’ère des « services augmentés ».    </p> <br/><br/>        </Row>
+
+<       button class = "collapsible2" onClick={this.revealText1}><center>Mythe Numéro 1</center></button>
+
+<p id="text1" style={{display: "none"}}>
+<h3>Mythe N°1 « L’IA, plus intelligente qu’un humain. » </h3>
+Les technologies capables de résoudre un problème plus efficacement ou plus rapidement que l’homme existent déjà, mais uniquement sur des tâches très spécifiques : résolution de jeux, traduction de textes en diverses langues, détection d’anomalies sur des IRM, etc. 
+
+Cependant, l’intelligence n’est pas seulement une puissance cognitive, c’est aussi la capacité à s’adapter et à se généraliser. Alors que le Deep Learning permet l’apprentissage automatique, la généralisation à tous les domaines n’est pas encore possible. 
+Pourquoi ? Parce que les programmes d’aujourd’hui ne sont pas encore dotés de conscience ni de compréhension du contexte </p>         </Row>
+
+
+<Row>
+<       button class = "collapsible2" onClick={this.revealText2}><center>Mythe Numéro 2</center></button>
+
+<p id="text2" style={{display: "none"}}>
+<h3>Mythe N°2 « Mythe N°2 : « L’IA, destructrice d’emplois. »  </h3>
+    Selon le Gartner, 1,8 millions de postes seront supprimés d’ici 2020 à cause de l’IA… Mais en contrepartie, 2,3 millions de postes seront créés ! Des chiffres qui peuvent paraître assez optimistes, à vérifier sur le long terme. Cependant, il est d’ores et déjà assuré que l’IA engendrera des changements avec des formations et des remises à niveau des personnels en entreprise
+Il faut donc surtout retenir les modifications des postes et non leur suppression, tout en gardant en ligne de mire les améliorations que l’IA peut nous apporter au quotidien, comme par exemple le pré-traitement de documents, apport dans la médecine (visualisation de tumeur). L’IA permet ainsi aux entreprises d’entrer dans l’ère des « services augmentés ».   </p>         </Row>
+
+
+<Row>
+<       button class = "collapsible2" onClick={this.revealText3}><center>Les infos cléfs!</center></button>
+
+<p id="text3" style={{display: "none"}}>
+<h3>Les mythes que faut-il retenir ?  </h3>
+Tout d’abord l’Intelligence Artificielle, ce n’est pas le futur mais bel et bien le présent. Il ne faut pas en avoir peur. L’IA n’a pas vocation à remplacer l’homme, mais plutôt « l’augmenter » en démultipliant ses performances. 
+Ensuite, bien évidemment, si son utilisation est faite dans un objectif malsain, l’IA sera effrayante, négative voire destructrice. Mais mise entre de bonnes mains, elle est alors porteuse de promesses d’un avenir enthousiasmant. Tout dépend donc de l’objectif initial. 
+Enfin, il faut comprendre le positionnement central de l’IA : située entre les données et l’algorithmie (ex. le Machine Learning), elle a vocation à rendre les offres et services plus efficaces et ainsi propulser les entreprises dans l’ère des « services augmentés ».    </p> <br/><br/>        </Row>
+
+
+ </div>
+
+ 
+  </Row>
+
+                        
+
+
                         <Row>
 
                     <center><h2>Définition de l’IA et applications  </h2></center>  <br/><br/>
@@ -210,17 +438,7 @@ class At1 extends React.Component {
  
                 Alors qu'en 2015 le marché de l'intelligence artificielle pesait 200 millions de dollars, on estime qu'en 2025, il s'élèvera à près de 90 milliards de dollars. <br/><br/> </p>         </Row>
                         </Row>
-                    <Col sm={4}>
-                        <ParallaxProvider>
-                            <Parallax
-                                className="custom-class"
-                                translateX={['40%', '0%']}
-                                tagOuter="figure"
-                            >
-                                <img class="side" src={side}></img>
-                            </Parallax>
-                        </ParallaxProvider>
-                    </Col>
+                        </Col>
                 </Row>
                 
                 <Row>
@@ -231,6 +449,7 @@ class At1 extends React.Component {
                         <div ref={this.cvRef} class="rect2"></div>
                     </div>
                 </Row>
+                
             </Container>
 
         )
