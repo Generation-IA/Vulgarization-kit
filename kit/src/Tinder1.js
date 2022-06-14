@@ -9,27 +9,6 @@ import questions from "./Ressources/Tinder1.json";
 import logo from "./img/ia-2.svg";
 
 function Tinder1() {
-  // const questions = [
-  //   {
-  //     index: 3,
-  //     title: "Do you think robots will rule the world ?",
-  //     answers: ["Yes", "No"],
-  //     correctAnswer: "No",
-  //   },
-  //   {
-  //     index: 2,
-  //     title: "Are you interested in AI ?",
-  //     answers: ["Yes", "No"],
-  //     correctAnswer: "Yes",
-  //   },
-  //   {
-  //     index: 1,
-  //     title: "Have you ever heard about AI ?",
-  //     answers: ["Yes", "No"],
-  //     correctAnswer: "Yes",
-  //   },
-  // ];
-
   // build the list of correct answers
   const correctAnswers = useMemo(() => {
     return questions.map((question) => question.correctAnswer);
@@ -38,6 +17,26 @@ function Tinder1() {
   console.log(correctAnswers);
 
   const results = [];
+
+  // function that counts the number of correct answers
+  const countCorrectAnswers = () => {
+    let count = 0;
+    for (let i = 0; i < results.length; i++) {
+      if (results[i] === correctAnswers[i]) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  // function that updates the score
+  const updateScore = () => {
+    let score = countCorrectAnswers();
+    // get html element
+    let scoreElement = document.querySelector(".rslt");
+    // update the score
+    scoreElement.innerText = score + "/" + questions.length;
+  }
 
   const [currentIndex, setCurrentIndex] = useState(questions.length - 1);
   const [lastDirection, setLastDirection] = useState();
@@ -102,33 +101,13 @@ function Tinder1() {
     console.log(myIdentifier + " left the screen");
   };
 
-  // function that counts the number of correct answers
-  const countCorrectAnswers = () => {
-    let count = 0;
-    for (let i = 0; i < results.length; i++) {
-      if (results[i] === correctAnswers[i]) {
-        count++;
-      }
-    }
-    return count;
-  }
-
-  // function that updates the score
-  const updateScore = () => {
-    let score = countCorrectAnswers();
-    // get html element
-    let scoreElement = document.querySelector(".rslt");
-    // update the score
-    scoreElement.innerText = score + "/" + questions.length;
-  }
-
 
   return (
     <Container className="Tinder">
       <h2 class='title'>Vrai / Faux</h2>
       <p>QUIZZ TIME BITCH</p>
 
-      <h2 class='intox'>🔥 Info ou intox?</h2>
+      <h2 class='intox'>🔥 Swipe !</h2>
       <div className="Tinder-container">
         <Stack spacing={-58}>
 
@@ -152,22 +131,22 @@ function Tinder1() {
               <li class="answer">{item.answers[1]}</li> */}
                 </h1>
                 <div className="buttons">
-              <button
-                type="button"
-                class="btn btn-danger"
-                style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
-                onClick={() => swipe("left")}
-              >
-                Swipe left!
-              </button>
-              <button
-                type="button"
-                class="btn btn-success"
-                style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
-                onClick={() => swipe("right")}
-              >
-                Swipe right!
-              </button> 
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
+                    onClick={() => swipe("left")}
+                  >
+                    Faux!
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
+                    onClick={() => swipe("right")}
+                  >
+                    Vrai!
+                  </button>
                 </div>{" "}
               </TinderCard>
             </center>
