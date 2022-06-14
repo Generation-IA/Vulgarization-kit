@@ -1,7 +1,6 @@
 import React from "react"
 import { Container, Row } from 'react-bootstrap'
 import './css/Sondage.css';
-import RGF from 'react-google-forms'
 import img from "./img/retourdexperience.png";
 import img2 from "./img/Endpage.png";
 import sondagebutton from "./img/Bouton-repondre_sondage.png";
