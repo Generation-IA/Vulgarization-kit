@@ -19,10 +19,10 @@ class Resum1 extends React.Component {
                 </Row>
                 <Row>
                     <ul>
-                        <a class="underlined"> {body_text.text.paragraph1} </a>
+                        <p class="underlined"> {body_text.text.paragraph1} </p>
                     </ul>
-                    <ul ><a class="underlined"> {body_text.text.paragraph2} </a></ul>
-                    <ul className='text_resum1_p3'><a class="underlined">{body_text.text.paragraph3} </a></ul>
+                    <ul ><p class="underlined"> {body_text.text.paragraph2} </p></ul>
+                    <ul className='text_resum1_p3'><p class="underlined">{body_text.text.paragraph3} </p></ul>
 
                 </Row>
 

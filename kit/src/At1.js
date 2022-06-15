@@ -247,13 +247,6 @@ class At1 extends React.Component {
                     <Row>
                         <Col >
 
-                        <h1 class="ml11">
-                        <span class="text-wrapper">
-                        <span class="line line1"></span>
-                        <span class="letters">Hello Goodbye</span>
-                        </span>
-                        </h1>
-
                             <h1 class="act">Objectifs Pedagogiques</h1>
                             <p class="bodytext"> A la fin de cet atelier, tu sauras définir ce qu’est l’<strong>intelligence artificielle (IA)</strong> et où tu en rencontres dans ta vie quotidienne.<br /><br />
 
