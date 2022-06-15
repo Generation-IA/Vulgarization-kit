@@ -18,8 +18,6 @@ import { motion } from "framer-motion";
 
 
 
-
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -47,8 +45,7 @@ class At1 extends React.Component {
     }
 
     // Variable with fake lorem ipsum text
-    text = " A la fin de cet atelier, tu sauras définir ce qu’est l’IA et où tu en rencontres dans ta vie quotidienne. Nous vivons dans un monde hyperconnecté dans lequel chaque interaction, de l'appel téléphonique à l'achat en passant par l'affichage d'une page web, s'ajoute à un océan de données sans fin. Avec l'arrivée de l'Internet des objets (IoT), les voitures, les réfrigérateurs, les vêtements... ceux-ci génèrent des millions de données supplémentaires chaque jour ! L &#39; objectif de ce premier épisode est de faire le point sur les mythes qui existent autour de l’IA, et de découvrir dans quelles mesures l’IA intervient dans notre quotidien.   ";
-
+    
 
     revealText1 = () => {
         // reveal the text
@@ -249,6 +246,13 @@ class At1 extends React.Component {
 
                     <Row>
                         <Col >
+
+                        <h1 class="ml11">
+                        <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Hello Goodbye</span>
+                        </span>
+                        </h1>
 
                             <h1 class="act">Objectifs Pedagogiques</h1>
                             <p class="bodytext"> A la fin de cet atelier, tu sauras définir ce qu’est l’<strong>intelligence artificielle (IA)</strong> et où tu en rencontres dans ta vie quotidienne.<br /><br />
