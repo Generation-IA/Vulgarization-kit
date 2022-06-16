@@ -1,6 +1,7 @@
 import React from "react";
 import p5 from "p5";
 import SentimentModule from "./sentimentModule.js";
+import CharRNNmodule from "./CharRNNModule.js";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import img from "./img/at1.svg";
 import side from "./img/side_logo.png";
@@ -13,12 +14,14 @@ class At1 extends React.Component {
     super(props);
     this.cvP5 = React.createRef();
     this.nlpRef = React.createRef();
+    this.CharRNNRef = React.createRef();
   }
 
   // Variable with fake lorem ipsum text
   text =
     "A la fin de cet atelier, tu sauras définir ce qu'est l'IA et savoir où tu en rencontres dans ta vie quotidienne.";
   SentimentModule = SentimentModule;
+  CharRNNmodule = CharRNNmodule;
 
   start = () => {
     this.cvP5 = new p5(this.SentimentModule, this.cvP5.current);
@@ -30,6 +33,11 @@ class At1 extends React.Component {
     this.cvP5.remove();
     this.cvP5 = new p5(this.SentimentModule, this.cvP5.current);
   };
+
+  charRNN = () =>{
+    this.cvP5.remove();
+    this.cvP5 = new p5(this.CharRNNmodule, this.cvP5.current);
+  } 
 
   render() {
     return (
@@ -75,15 +83,21 @@ class At1 extends React.Component {
           <h2 class="act">Activité</h2>
         </Row>
         <Row>
-            <div ref={this.cvP5}></div>
-            <Button onClick={this.start} className='nlpstart'>Start</Button>
+          <div class="rect1">
+            <div ref={this.cvP5} class="rect2"></div>
+            {/* <Button onClick={this.start}>Start</Button> */}
+          </div>
         </Row>
         <Row>
           <center>
             <h1 class="nlp">Nlp modules here !</h1>
             <Col>
-              <input class="input"></input>
-              <Button ref={this.nlpRef}>Submit</Button>
+              <Button ref={this.cvP5} onClick={this.start} className='nlpstart'>Démarrer</Button>
+              <div id='nlpDiv'></div>
+            </Col>
+            <Col>
+              <Button ref={this.cvP5}>charRNN</Button>
+              <div id='charRNNDiv'></div> 
             </Col>
           </center>
         </Row>

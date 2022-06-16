@@ -7,18 +7,20 @@ const SentimentModule = (p) => {
   let inputBox;
   let sentimentResult;
   p.setup = () => {
-    p.noCanvas();
+    // p.noCanvas();
+    var canvas = p.createCanvas(100,100);
+    canvas.parent('nlpDiv'); 
     // initialize sentiment
     sentiment = ml5.sentiment("movieReviews", modelReady);
 
     // setup the html environment
-    statusEl = p.createP("Loading Model...");
+    statusEl = p.createP("Chargement du modèle...");
     inputBox = p.createInput(
-      "Today is the happiest day and is full of rainbows!"
+      "Quelle journée fantastique"
     );
     inputBox.attribute("size", "75");
-    submitBtn = p.createButton("submit");
-    sentimentResult = p.createP("sentiment score:");
+    submitBtn = p.createButton("Analyser !");
+    sentimentResult = p.createP("Score de sentiment:");
 
     // predicting the sentiment on mousePressed()
     submitBtn.mousePressed(getSentiment);
@@ -37,7 +39,7 @@ const SentimentModule = (p) => {
 
   function modelReady() {
     // model is ready
-    statusEl.html("model loaded");
+    statusEl.html("modèle chargé");
   }
 };
 
