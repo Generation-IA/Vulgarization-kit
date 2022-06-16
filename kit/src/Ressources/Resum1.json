@@ -1,8 +1,8 @@
 {
     "name": "body_text",
     "text": {
-        "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus. Sed vitae mollis tellus, nec rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur non augue mollis, ullamcorper felis quis, tincidunt dolor. Donec nec purus ac sem pretium dictum.",
-        "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus.",
-        "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis varius neque, vel lobortis tortor. Cras ornare dui non leo mollis maximus. Sed vitae mollis tellus, nec rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+        "paragraph1": "Tout d’abord l’Intelligence Artificielle, ce n’est pas le futur mais bel et bien le présent. Il ne faut pas en avoir peur. L’IA n’a pas vocation à remplacer l’homme, mais plutôt « l’augmenter » en démultipliant ses performances.  ",
+        "paragraph2": "Ensuite, bien évidemment, si son utilisation est faite dans un objectif malsain, l’IA sera effrayante, négative voire destructrice. Mais mise entre de bonnes mains, elle est alors porteuse de promesses d’un avenir enthousiasmant. Tout dépend donc de l’objectif initial. ",
+        "paragraph3": "Enfin, il faut comprendre le positionnement central de l’IA : située entre les données et l’algorithmie (ex. le Machine Learning), elle a vocation à rendre les offres et services plus efficaces et ainsi propulser les entreprises et les acteurs publics dans l’ère des « services augmentés »."
     }
 }
