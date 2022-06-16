@@ -1,0 +1,56 @@
+.Tinder {
+  text-align: center;
+}
+
+.Tinder-container{
+  height: 500px;
+}
+
+.swipe {
+  width: 500px;
+  height: 450px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-color: white;
+  background-color: #540dec;
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  outline: 1px solid black;
+}
+
+.answer {
+  margin: 15px;
+}
+
+.rightSwipe {
+  margin: 10px;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.tinderTitle {
+  margin: 5px;
+  background-color: white;
+  color: #540dec;
+  width: 10rem;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+intox {
+  /* center */
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+
+  color: #000000;
+}
