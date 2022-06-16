@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-css-transition-hook": "^2.1.0",
+    "react-google-forms": "^1.0.3"
+  }
+}

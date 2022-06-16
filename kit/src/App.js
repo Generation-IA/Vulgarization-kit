@@ -7,6 +7,7 @@ import At2 from "./At2.js";
 import Explication1 from "./Explication1.tsx";
 import Tinder1 from "./Tinder1.js";
 import Resum1 from "./Resum1.js";
+import Sondage from "./Sondage.js";
 import "bootstrap/dist/css/bootstrap.css";
 // import Col from 'react-bootstrap/Col';
 // import Row from 'react-bootstrap/Row';
@@ -75,6 +76,7 @@ class App extends React.Component {
         <Resum1 />
         <Tinder1 />
         <At2 />
+        <Sondage />
       </div>
     );
   }
