@@ -1,14 +1,9 @@
 import React from "react";
 import p5 from "p5";
-import SketchObj from "./cv/obj_detect.js";
-import SketchPose from "./cv/pose_detect.js";
-import SketchFace from "./cv/face_detect.js";
-import SketchHand from "./cv/hand_detect.js";
 import SentimentModule from "./sentimentModule.js";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import img from "./img/at1.svg";
 import side from "./img/side_logo.png";
-import title from "./img/at1.svg";
 import "./css/At1.css";
 import { Parallax } from "react-scroll-parallax";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -27,6 +22,8 @@ class At1 extends React.Component {
 
   start = () => {
     this.cvP5 = new p5(this.SentimentModule, this.cvP5.current);
+    // hide button
+    document.querySelector('.nlpstart').style.display = 'none'
   };
 
   sentimentAnalysis = () => {
@@ -78,10 +75,8 @@ class At1 extends React.Component {
           <h2 class="act">Activité</h2>
         </Row>
         <Row>
-          <div class="rect1">
-            <div ref={this.cvP5} class="rect2"></div>
-            <Button onClick={this.start}>Start</Button>
-          </div>
+            <div ref={this.cvP5}></div>
+            <Button onClick={this.start} className='nlpstart'>Start</Button>
         </Row>
         <Row>
           <center>
