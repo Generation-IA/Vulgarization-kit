@@ -1,17 +1,25 @@
 .act{
     /* activité */
-
     font-family: 'Sen';
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
-    /* identical to box height */
-
     text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: #000000;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+
+h1:hover{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; 
+  cursor: pointer;
+  letter-spacing: 10px;
+  font-size: "Sen";
 }
 
 .parallax_position {

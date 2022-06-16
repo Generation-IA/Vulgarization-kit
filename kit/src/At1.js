@@ -280,7 +280,7 @@ class At1 extends React.Component {
                 </Row>
                 <Row>
                     
-                    <h2 class="act" >Activité</h2>
+                    <h1 class="act" >Activité</h1>
 
                 </Row>
                 <Row>
