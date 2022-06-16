@@ -153,8 +153,8 @@ function Tinder1() {
           ))}
         </Stack>
       </div>
-      <h2>Nombre de beignets capté: 🍩</h2>
-      <h2 class='rslt'>{countCorrectAnswers()} / {questions.length}</h2>
+      <h3>Nombre de beignets capté: 🍩</h3>
+      <h3 class='rslt'>{countCorrectAnswers()} / {questions.length}</h3>
     </Container>
   );
 }
