@@ -1,12 +1,10 @@
 import React, { useState, useMemo, useRef } from "react";
-import userEvent from "@testing-library/user-event";
 import TinderCard from "react-tinder-card";
 import "./css/Tinder1.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Stack from '@mui/material/Stack';
 import { Container } from "react-bootstrap";
 import questions from "./Ressources/Tinder1.json";
-import logo from "./img/ia-2.svg";
 
 function Tinder1() {
   // build the list of correct answers
@@ -104,9 +102,7 @@ function Tinder1() {
 
   return (
     <Container className="Tinder">
-      <h2 class='title'>Vrai / Faux</h2>
-      <p>QUIZZ TIME BITCH</p>
-
+      <h2 class='title'>Vrai / Faux ?</h2>
       <h2 class='intox'>🔥 Swipe !</h2>
       <div className="Tinder-container">
         <Stack spacing={-58}>
@@ -125,7 +121,7 @@ function Tinder1() {
                 <div className="tinderTitle">
                   Culture <br /> Générale
                 </div>
-                <h1>
+                <h1 className="tindertext">
                   {item.index} : {item.title} <br />
                   {/* <li class="answer">{item.answers[0]}</li>
               <li class="answer">{item.answers[1]}</li> */}
@@ -153,7 +149,7 @@ function Tinder1() {
           ))}
         </Stack>
       </div>
-      <h3>Nombre de beignets capté: 🍩</h3>
+      <h3>Nombre de beignets captés: 🍩</h3>
       <h3 class='rslt'>{countCorrectAnswers()} / {questions.length}</h3>
     </Container>
   );

@@ -56,17 +56,7 @@ class Decouverte extends React.Component {
                 </Row>
                 <Row>
                     <p class='text'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin felis dui, elementum eget viverra ac, lobortis volutpat urna.
-                        Integer scelerisque id dui ut condimentum. Vestibulum iaculis in
-                        eros id viverra. Ut lacinia dolor sed lobortis elementum.
-                        Curabitur non varius felis, varius placerat massa. Donec orci velit,
-                        mattis non condimentum eu, feugiat eu dui. Ut sem risus,
-                        ornare a scelerisque ut, ultrices id urna. Vivamus mollis faucibus
-                        ante, non cursus orci vestibulum non. Aliquam sed magna et odio
-                        pharetra laoreet non sit amet mauris. Curabitur malesuada vestibulum
-                        risus, sed accumsan lacus semper sit amet. Nullam hendrerit massa a
-                        ipsum feugiat, vitae rutrum urna pellentesque. In vitae posuere nibh.
+                    L’objectif de ce cours est de réaliser une initiation à l’IA, qui est présente au quotidien dans ta vie. Découvre au cours de ces trois chapitres ce qui se cache derrière cette technologie révolutionnaire ! Elle intervient aujourd’hui dans tous les domaines : santé, transports, sports, commerce... L’IA offre de nouvelles possibilités technologiques et de belles opportunités. Cependant, il faut être vigilant à la manière de s’en servir ! Es-tu prêt à commencer les ateliers ? 
                     </p>
                 </Row>
                 <Row>
@@ -86,20 +76,22 @@ class Decouverte extends React.Component {
                 <Row>
                     <Bounce right>
                         <p className='atintro'><strong>ATELIER 1 - L'IA AU QUOTIDIEN</strong></p>
-                        {this.text()}
+                        <p className='atintro'>A la fin de cet atelier, tu sauras définir ce qu’est l’intelligence artificielle (IA) et où tu en rencontres dans ta vie quotidienne.</p>
                     </Bounce>
+                    <br /><br />
                 </Row>
                 <Row>
                     <Bounce left>
                         <p className='atintro'><strong>ATELIER 2 - PROTECTION DES DONNÉES PERSONNELLES</strong></p>
-                        {this.text()}
+                        <p className='atintro'>A la fin de cet atelier, tu sauras ce que sont les données personnelles, à quoi elles servent, et comment les gérer.</p>
                     </Bounce>
+                    <br /><br />
 
                 </Row>
                 <Row>
                     <Bounce right>
                         <p className='atintro'><strong>ATELIER 3 - ÉTHIQUE ET TECHNOLOGIES</strong></p>
-                        {this.text()}
+                        <p className='atintro'>A la fin de cet atelier, tu sauras identifier les enjeux éthiques de l’IA.</p>
                     </Bounce>
                 </Row>
                 <img src={decouv} className='decouv' alt='decouv'></img>

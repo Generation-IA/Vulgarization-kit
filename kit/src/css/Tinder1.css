@@ -44,6 +44,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.tindertext{
+  pointer-events: none;
+}
+
 intox {
   /* center */
   font-family: 'Sen';

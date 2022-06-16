@@ -18,7 +18,7 @@ class Presentation extends React.Component {
         const fx = new TextScramble(el)
 
         setTimeout(() => {
-            fx.setText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin felis dui, elementum eget viverra ac, lobortis volutpat urna. Integer scelerisque id dui ut condimentum. Vestibulum iaculis in eros id viverra. Ut lacinia dolor sed lobortis elementum. Curabitur non varius felis, varius placerat massa. Donec orci velit, mattis non condimentum eu, feugiat eu dui. Ut sem risus, ornare a scelerisque ut, ultrices id urna. Vivamus mollis faucibus ante, non cursus orci vestibulum non. Aliquam sed magna et odio pharetra laoreet non sit amet mauris. Curabitur malesuada vestibulum risus, sed accumsan lacus semper sit amet. Nullam hendrerit massa a ipsum feugiat, vitae rutrum urna pellentesque. In vitae posuere nibh.');
+            fx.setText('Génération IA est une association créée en 2021 à Montpellier. Elle est composée de professionnels dans le monde de l’IA et d’étudiants de différentes filières. L’objectif de l’association est de démystifier l’IA auprès des jeunes générations, mais aussi de faire réfléchir aux enjeux éthiques de cette technologie. Enfin, elle cherche à représenter les étudiants dans le monde de l’IA qui sont les acteurs de demain. Dans le cadre de leur première action, Génération IA réalise cet outil pédagogique innovant, à destination des lycéens, afin de vulgariser l’IA présente au quotidien. Le site regorge de petites animations et de références aux réseaux sociaux, seras-tu capable de toutes les découvrir ? ');
         }, 200)
     }
 
