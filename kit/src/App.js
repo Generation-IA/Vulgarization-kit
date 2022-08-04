@@ -68,7 +68,6 @@ class App extends React.Component {
   render() {
     return (
       <div class="center">
-        <p>Tesssssssstttt</p>
         <First />
         <Presentation />
         <Decouverte />
